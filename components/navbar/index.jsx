@@ -17,7 +17,7 @@ const Navbar = () => {
             aria-expanded={isNav}
             type="button"
           >
-            <span className={style.menu}>Menu</span>
+            <span className={style.menu} style={{ marginRight: '20px' }}>Self Lawyer</span>
             <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
               <path
                 fillRule="evenodd"
@@ -30,13 +30,13 @@ const Navbar = () => {
             <ul className={style.navitem}>
               {/* List of navigation links */}
               <li className={style.navlink}><Link href="/">Home</Link></li>
-              <li className={style.navlink}><Link href="/findSitter">Find a sitter</Link></li>
-              <li className={style.navlink}><Link href="/findHouse">Find a house</Link></li>
-              <li className={style.navlink}><Link href="/membership">Membership</Link></li>
-              <li className={style.navlink}><Link href="/reviews">Reviews</Link></li>
-              <li className={style.navlink}><Link href="/faq">FAQ's</Link></li>
+              <li className={style.navlink}><Link href="/findSitter">About Slf</Link></li>
+              <li className={style.navlink}><Link href="/findHouse">Practical Area</Link></li>
+              <li className={style.navlink}><Link href="/membership">Our People</Link></li>
+              <li className={style.navlink}><Link href="/reviews">Careers</Link></li>
+              <li className={style.navlink}><Link href="/faq">News</Link></li>
               <li className={style.navlink}><Link href="/contactUs">Contact Us</Link></li>
-              <li className={style.navlink}><Link href="/giftVaucher">Gift Voucher</Link></li>
+              <li className={style.navlink}><Link href="/giftVaucher">FAQ</Link></li>
             </ul>
           </div>
         </div>
