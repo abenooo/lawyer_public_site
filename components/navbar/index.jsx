@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import style from './styles.module.css';
-import callus from '../../public/assets/images/Vector.png';
 
 const Navbar = () => {
   const [isNav, setNav] = useState(false);
