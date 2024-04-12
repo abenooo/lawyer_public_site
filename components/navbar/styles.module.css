@@ -1,14 +1,11 @@
 .navbarParent {
-  @apply container mx-auto flex flex-row items-center justify-start mb-[19px];
+  @apply container mx-auto flex flex-row items-start justify-end mb-[19px];
 }
 
 .logo {
   @apply w-14 h-14 md:w-[102px] md:h-[118px] ml-5;
 }
 
-.headerText {
-  @apply text-[14px] lg:text-[42px] md:text-[28px] font-extrabold leading-[20px] md:leading-[49px];
-}
 
 .headerSubText {
   @apply hidden md:flex text-[10px] md:text-[15px] lg:text-[20px] md:font-semibold md:leading-[23px];
@@ -48,11 +45,11 @@
 }
 
 .navbarWrapper {
-  @apply container mx-auto flex flex-col items-start justify-start mb-[19px];
+  @apply container mx-auto flex flex-col items-end justify-end mb-[19px];
 }
 
 .navlink {
-  @apply text-[12px] lg:text-[19px] 2xl:text-[20px] block py-2 px-4 md:bg-transparent md:p-0 text-white transition duration-300 mb-6 md:mb-0 font-medium;
+  @apply text-[12px] lg:text-[16p] gap-4 2xl:text-[16px] block py-2 px-4 md:bg-transparent md:p-0 text-white transition duration-300 mb-6 md:mb-0 font-medium uppercase cursor-pointer;
 }
 
 .navitem {
