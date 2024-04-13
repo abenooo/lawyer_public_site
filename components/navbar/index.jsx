@@ -16,8 +16,6 @@ const MyNavbar = () => {
           <Navbar.Link href="/navbars">Services</Navbar.Link>
           <Navbar.Link href="/navbars">Pricing</Navbar.Link>
           <Navbar.Link href="/navbars">Contact</Navbar.Link>
-          <Navbar.Link href="/navbarss">Contact</Navbar.Link>
-          <Navbar.Link href="/navbarsss">Contacdt</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
       <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
@@ -70,7 +68,7 @@ const MyNavbar = () => {
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                   aria-current="page"
                 >
-                  Home
+                  Home2
                 </a>
               </li>
               <li>
