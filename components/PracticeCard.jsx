@@ -1,8 +1,8 @@
-
+import Image from "next/image";
 
 function PracticeCard() {
   return (
-    <div className="px-2 bg-gray-300">
+    <div className="px-2 bg-gray-50">
       <h1 className="font-semibold text-center text-4xl mt-14">
         Our Practice Areas
       </h1>
@@ -14,28 +14,30 @@ function PracticeCard() {
           Contact Us.
         </a>
       </p>
-      <div className="md:grid grid-cols-4 md:w-3/5 mx-auto gap-3">
+      <div className="md:grid grid-cols-4 md:w-3/5 mx-auto gap-10">
         <div className="">
           <img
-            className="-mb-10 mx-auto block w-32"
+            className="-mb-10 mx-auto block w-24 h-24"
             src="https://slflawyers.com.au/wp-content/uploads/2021/01/Artboard-11009.png"
             alt="practice area image"
           />
-          <div className="px-8 py-10 shadow-xl bg-white rounded-2xl">
-            <p className="text-center text-sm">Building and Construction</p>
+          <div className="px-12 py-10 shadow-xl bg-white rounded-2xl flex items-center justify-center">
+            <p className="text-sm whitespace-nowrap">
+              Building and Construction
+            </p>
           </div>
         </div>
         {/* card two */}
 
         <div className="">
           <img
-            className="-mb-10 mx-auto block w-32"
+            className="-mb-10 mx-auto block w-24 h-24"
             src="https://slflawyers.com.au/wp-content/uploads/2021/01/Artboard-11009-160x160.png"
             alt="practice area image"
           />
-          <div className="px-8 py-10 shadow-xl bg-white rounded-2xl">
-            <p className="text-center text-sm">
-              Alternative Dispute Resolution
+          <div className="px-12 py-10 shadow-xl bg-white rounded-2xl flex items-center justify-center">
+            <p className="text-sm whitespace-nowrap">
+            Alternative Dispute Resolution
             </p>
           </div>
         </div>
@@ -43,12 +45,14 @@ function PracticeCard() {
 
         <div className="">
           <img
-            className="-mb-10 mx-auto block w-32"
+            className="-mb-10 mx-auto block w-24 h-24"
             src="https://slflawyers.com.au/wp-content/uploads/2021/01/Artboard-11012.png"
             alt="practice area image"
           />
-          <div className="px-8 py-10 shadow-xl bg-white rounded-2xl">
-            <p className="text-center text-sm">Commercial Litigation</p>
+          <div className="px-12 py-10 shadow-xl bg-white rounded-2xl flex items-center justify-center">
+            <p className="text-sm whitespace-nowrap">
+            Commercial Litigation
+            </p>
           </div>
         </div>
 
@@ -56,17 +60,18 @@ function PracticeCard() {
 
         <div className="">
           <img
-            className="-mb-10 mx-auto block w-32"
+            className="-mb-10 mx-auto block w-24 h-24"
             src="https://slflawyers.com.au/wp-content/uploads/2021/01/Artboard-11011-160x160.png"
             alt="practice area image"
           />
           <div className="px-8 py-10 shadow-xl bg-white rounded-2xl">
             <p className="text-center text-sm">Commercial Law</p>
           </div>
+          
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default PracticeCard
+export default PracticeCard;
