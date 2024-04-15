@@ -1,3 +1,6 @@
+import Teams from "./Teams";
+import NewsCard from "./NewsCard"
+import PracticeCard from "./PracticeCard"
 function Hero() {
   return (
     <>
@@ -91,6 +94,10 @@ function Hero() {
         </div>
       </div>
       {/* </div> */}
+      {/* teams */}
+      <PracticeCard/>
+      <Teams/>
+      <NewsCard/>
     </>
   );
 }
