@@ -15,7 +15,7 @@ const MyNavbar = () => {
     <>
       <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-          <a href="https://flowbite.com" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
           <Image 
         src="/assets/logo.jpeg" 
         alt="Flowbite Logo" 
@@ -39,7 +39,14 @@ const MyNavbar = () => {
           </button>
           <div id="mega-menu-full" className={`items-center justify-between font-medium ${isNav ? 'flex' : 'hidden'} w-full md:flex md:w-auto md:order-1`}>
             <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              {/* Other menu items */}
+            <li>
+                <a
+                  href="#"
+                  className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  News
+                </a>
+              </li>
               <li>
                 <button
                   id="mega-menu-full-dropdown-button"
@@ -47,7 +54,7 @@ const MyNavbar = () => {
                   className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                   onClick={toggleAboutDropdown} // Bind click event to toggle dropdown
                 >
-                  Company{" "}
+                  Practice Areas{" "}
                   <svg
                     className="w-2.5 h-2.5 ms-2.5"
                     aria-hidden="true"
@@ -64,7 +71,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Marketplace
+                  Our People
                 </a>
               </li>
               <li>
@@ -72,7 +79,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Resources
+                  News
                 </a>
               </li>
               <li>
@@ -80,7 +87,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
                 >
-                  Contact
+                  Contact us
                 </a>
               </li>
             </ul>
@@ -99,7 +106,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Online Stores</div>
+                  <div className="font-semibold">Practice Area I</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
@@ -110,7 +117,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Segmentation</div>
+                  <div className="font-semibold">Insurance Law</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
@@ -121,7 +128,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Marketing CRM</div>
+                  <div className="font-semibold">Family Law</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
@@ -134,7 +141,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Online Stores</div>
+                  <div className="font-semibold">Commercial Law</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
@@ -145,7 +152,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Segmentation</div>
+                  <div className="font-semibold">Commercial Litigation</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
@@ -156,7 +163,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Marketing CRM</div>
+                  <div className="font-semibold">Ethiopia Law</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
