@@ -1,4 +1,4 @@
-import React from 'react'
+import { BsLinkedin, BsTelephoneFill, BsEnvelope } from "react-icons/bs";
 
 function Teams() {
   return (
