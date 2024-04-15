@@ -163,7 +163,7 @@ const MyNavbar = () => {
                   href="#"
                   className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
                 >
-                  <div className="font-semibold">Ethiopia Law</div>
+                  <div className="font-semibold">Marketing CRM</div>
                   <span className="text-sm text-gray-500 dark:text-gray-400">
                     Connect with third-party tools that you're already using.
                   </span>
