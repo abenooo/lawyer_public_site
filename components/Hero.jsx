@@ -4,7 +4,7 @@ import PracticeCard from "./PracticeCard"
 function Hero() {
   return (
     <>
-      <div className=" bg-[url('https://slflawyers.com.au/wp-content/uploads/2023/02/Untitled-design-2023-02-03T120344.159.png')] ">
+      <div className=" bg-[url('https://slflawyers.com.au/wp-content/uploads/2023/02/Untitled-design-2023-02-03T120344.159.png')] h-[85vh] bg-cover">
         <div className=" text-white flex flex-col gap-5 justify-center items-center">
           <h1 className="mt-40 text-white font-semibold text-4xl">
             SLF Lawyers
