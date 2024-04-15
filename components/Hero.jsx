@@ -6,10 +6,10 @@ function Hero() {
     <>
       <div className=" bg-[url('https://slflawyers.com.au/wp-content/uploads/2023/02/Untitled-design-2023-02-03T120344.159.png')] h-[85vh] bg-cover">
         <div className=" text-white flex flex-col gap-5 justify-center items-center">
-          <h1 className="mt-40 text-white font-semibold text-4xl">
+          <h1 className="mt-40 text-white font-semibold text-6xl">
             SLF Lawyers
           </h1>
-          <p className="mx-3 text-center text-xl md:w-2/5">
+          <p className="mx-3 text-center text-medium md:w-2/5">
             SLF Lawyers is a new breed of law firm. We don’t stand on tradition
             or outdated ways of doing business. We don’t hide behind legalese or
             arcane legal procedures. The focus is on getting results for our
