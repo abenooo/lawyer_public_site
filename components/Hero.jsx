@@ -5,8 +5,8 @@ function Hero() {
   return (
     <>
       <div className=" bg-[url('https://slflawyers.com.au/wp-content/uploads/2023/02/Untitled-design-2023-02-03T120344.159.png')] h-[85vh] bg-cover">
-        <div className=" text-white flex flex-col gap-5 justify-center items-center">
-          <h1 className="mt-60 text-white font-semibold text-6xl">
+        <div className=" text-white flex flex-col gap-5 justify-center items-center h-full">
+          <h1 className=" text-white font-semibold text-6xl">
             SLF Lawyers
           </h1>
           <p className="mx-3 text-center text-medium md:w-2/5">
