@@ -9,25 +9,25 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="bg-slate-900 text-gray-200 py-20 px-8">
-      <div>
-        <div className="flex gap-3">
-          <img
-            src="/assets/logo.jpeg"
-            alt="logo"
-            className="h-8 w-8 rounded-xl"
-          />
-          <h3 className="text-lg font-semibold">Solomon lawyer</h3>
-        </div>
+    <div className="bg-slate-900 text-gray-200 py-20 px-8 mt-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:w-3/4 mx-auto">
+        <div className="col-span-2 md:col-span-1">
+          <div className="flex gap-3">
+            <img
+              src="/assets/logo.jpeg"
+              alt="logo"
+              className="h-8 w-8 rounded-xl"
+            />
+            <h3 className="text-lg font-semibold">Solomon lawyer</h3>
+          </div>
 
-        <p className="text-justify mt-2">
-          Solomon Lawyers is a new breed of law firm. We don’t stand on
-          tradition or outdated ways of doing business. We don’t hide behind
-          legalese or arcane legal procedures.
-        </p>
-      </div>
-      <div className="flex justify-between">
-        <div className="mt-3">
+          <p className="text-justify mt-2">
+            Solomon Lawyers is a new breed of law firm. We don’t stand on
+            tradition or outdated ways of doing business. We don’t hide behind
+            legalese or arcane legal procedures.
+          </p>
+        </div>
+        <div className="mt-3 md:ml-9">
           <h3 className="text-lg font-semibold">Quick Links</h3>
           <ul className="ml-3">
             <li>
@@ -67,20 +67,21 @@ function Footer() {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="mt-3">
-        <h3 className="text-lg font-semibold">Information</h3>
-        <div className="flex items-center gap-3 my-2 ml-3">
-          <GrLocation className="text-xl text-cyan-600" />
-          <p className="text-sm">Addis Ababa lideta infront of xxx</p>
-        </div>
-        <div className="flex items-center gap-3 my-2 ml-3">
-          <FiPhoneCall className="text-xl text-cyan-600" />
-          <p>+251911111111 /+251911111111 </p>
-        </div>
-        <div className="flex items-center gap-3 my-2 ml-3">
-          <MdOutlineEmail className="text-xl text-cyan-600" />
-          <p>support@gmail.com</p>
+
+        <div className="mt-3 col-span-2 md:col-span-1">
+          <h3 className="text-lg font-semibold">Information</h3>
+          <div className="flex items-center gap-3 my-2 ml-3">
+            <GrLocation className="text-xl text-cyan-600" />
+            <p className="text-sm">Addis Ababa lideta infront of xxx</p>
+          </div>
+          <div className="flex items-center gap-3 my-2 ml-3">
+            <FiPhoneCall className="text-xl text-cyan-600" />
+            <p>+251911111111 /+251911111111 </p>
+          </div>
+          <div className="flex items-center gap-3 my-2 ml-3">
+            <MdOutlineEmail className="text-xl text-cyan-600" />
+            <p>support@gmail.com</p>
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center gap-2 my-8">
