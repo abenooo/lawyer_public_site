@@ -1,6 +1,11 @@
 import { GrLocation } from "react-icons/gr";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { GrInstagram } from "react-icons/gr";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -78,9 +83,28 @@ function Footer() {
           <p>support@gmail.com</p>
         </div>
       </div>
-      <div>
-
+      <div className="flex justify-center items-center gap-2 my-8">
+        <a href="#" className="bg-gray-700 p-3 rounded-full text-white">
+          {" "}
+          <FaFacebookF />
+        </a>
+        <a href="#" className="bg-gray-700 p-3 rounded-full text-white">
+          {" "}
+          <FaXTwitter />
+        </a>
+        <a href="#" className="bg-gray-700 p-3 rounded-full text-white">
+          {" "}
+          <GrInstagram />
+        </a>
+        <a href="#" className="bg-gray-700 p-3 rounded-full text-white">
+          {" "}
+          <FaTelegramPlane />
+        </a>
+        <a href="#" className="bg-gray-700 p-3 rounded-full text-white">
+          <FaLinkedinIn />
+        </a>
       </div>
+      <p className="text-center">@2024 Copyright</p>
     </div>
   );
 }
