@@ -4,7 +4,7 @@ function ContactUs() {
       <h1 className="font-semibold text-center text-4xl mt-14 ">
         Do you need legal advice?{" "}
       </h1>
-      <div class="flex justify-center">
+      <div className="flex justify-center">
         <hr className="w-24 h-0.5 mt-5 mb-8 bg-yellow-600 border-0 rounded" />
       </div>{" "}
       <p className="my-3 text-center font-sans text-xs">
@@ -128,14 +128,14 @@ function ContactUs() {
           <div className="my-3">
             <label
               for="message"
-              class="block mb-2 text-sm font-medium text-gray-900"
+              className="block mb-2 text-sm font-medium text-gray-900"
             >
               Your message
             </label>
             <textarea
               id="message"
               rows="4"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 "
+              className="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 "
               placeholder="Write your thoughts here..."
             ></textarea>
           </div>
