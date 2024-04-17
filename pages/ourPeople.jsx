@@ -36,7 +36,7 @@ const getRandomMembers = (count, members) => {
 
 const TeamMember = ({ member }) => (
   <div className="shadow-2xl text-center max-w-sm bg-white">
-    <div className="relative w-full h-60">
+    <div className="relative w-full px-4 h-60">
       <Image
         src={member.imgSrc}
         alt={member.name}
@@ -86,39 +86,53 @@ const OurPeople = () => {
         <div className="-mt-20 shadow-2xl w-11/12 mx-auto rounded-3xl md:w-3/5">
           <div className="bg-white rounded-t-3xl py-3 md:flex-row justify-around md:p-10">
             <div className="mb-6">
-              <p className="font-sans text-xs   text-gray-900 dark:text-gray-800 text-center">
-                {" "}
+              <p className="font-sans text-xs text-gray-900 dark:text-gray-800 text-center">
                 Our team has a combined experience of over 750 years and decades
                 of hands-on experience in each of our practice areas.
-                <p className="font-sans text-xs  text-gray-900 dark:text-gray-800"></p>{" "}
+              </p>
+              <p className="font-sans text-xs text-gray-900 dark:text-gray-800">
                 Contact our team directly by selecting one of the following
                 locations and clicking on their details
               </p>
             </div>
-            <button
-              onClick={() => setFilter("All")}
-              className={buttonClass("All")}
-            >
-              All
-            </button>
-            <button
-              onClick={() => setFilter("Managing Partner")}
-              className={buttonClass("Managing Partner")}
-            >
-              Managing Partners
-            </button>
-            <button
-              onClick={() => setFilter("Senior Partner")}
-              className={buttonClass("Senior Partner")}
-            >
-              Senior Partners
-            </button>
-            <button
-              onClick={() => setFilter("Partner")}
-              className={buttonClass("Partner")}
-            >
-              Partners
-            </button>
+            <div className="bg-white rounded-t-3xl py-3 md:flex-row justify-around md:p-10 flex space-x-2">
+              <button
+                onClick={() => setFilter("All")}
+                className={
+                  buttonClass("All") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                All
+              </button>
+              <button
+                onClick={() => setFilter("Managing Partner")}
+                className={
+                  buttonClass("Managing Partner") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                Managing Partners
+              </button>
+              <button
+                onClick={() => setFilter("Senior Partner")}
+                className={
+                  buttonClass("Senior Partner") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                Senior Partners
+              </button>
+              <button
+                onClick={() => setFilter("Partner")}
+                className={
+                  buttonClass("Partner") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                Partners
+              </button>
+            </div>
           </div>
         </div>
       </div>
