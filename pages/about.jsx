@@ -125,20 +125,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* do you need legal advice */}
-      <div className=" text-black flex flex-col gap-5 justify-center items-center">
-        <h1 className="text-black font-semibold text-6xl">
-          Do you need legal advice?
-        </h1>
-        <p className="ont-sans text-xs text-left">
-          We understand that you may need help, but aren’t yet ready to sign an
-          engagement agreement. 
-          </p>
-          <p className="ont-sans text-xs text-left">
-          If you need a confidential obligation-free
-          consultation, contact us today.
-        </p>
-      </div>
+      
     </>
   );
 };
