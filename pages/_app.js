@@ -13,7 +13,6 @@ export default function App({ Component, pageProps }) {
       <MyNavbar />
       {isHomePage && <Hero />}
       <Component {...pageProps} />
-      <ContactUs/>
     </>
   );
 }
