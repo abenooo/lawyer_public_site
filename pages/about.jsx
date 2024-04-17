@@ -46,13 +46,13 @@ const About = () => {
       </div>
       <div className="-mt-20 shadow-2xl w-11/12 mx-auto rounded-3xl md:w-3/5">
         <div className="bg-white rounded-t-3xl items-center gap-6 py-3 md:flex-row justify-around md:p-10">
-          <p className="font-sans text-sm">
+          <p className="font-sans text-sm text-left  text-gray-900 dark:text-gray-800">
             {" "}
             SLF Lawyers is a new breed of law firm. We don’t stand on tradition
             or outdated ways of doing business.
           </p>
 
-          <p className="font-sans text-sm">
+          <p className="font-sans text-sm text-left  text-gray-900 dark:text-gray-800">
             We take a team approach to dealing with the more complex legal
             problems that cross our desks, working on the very reasonable
             assumption that two or more heads are better than one. We take the
@@ -60,7 +60,7 @@ const About = () => {
             the box to find solutions in even the most complex legal situations.
           </p>
 
-          <p className="font-sans text-sm">
+          <p className="font-sans text-sm text-left  text-gray-900 dark:text-gray-800">
             We don’t hide behind legalese or arcane legal procedures, clearly
             communicating our process every step of the way. The focus is on
             getting results for our clients, not on how our foyer looks.
