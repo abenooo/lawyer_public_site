@@ -31,7 +31,7 @@ const About = () => {
       image: "/assets/about/Franchising & Licencing.webp",
     },
     { name: "Insurance Law", image: "/assets/about/Insurance Law.webp" },
-    { name: "Italian Law", image: "/assets/about/Italian Law.webp" },
+    { name: "Ethiopian Law", image: "/assets/about/Italian Law.webp" },
     { name: "Property Law", image: "/assets/about/Property Law.webp" },
   ];
 
@@ -104,7 +104,7 @@ const About = () => {
                     .toLowerCase()}`}
                 >
                   <div
-                    className="relative mb-9 rounded-xl py-8 px-7 bg-white shadow-md transition-all hover:shadow-lg sm:p-9 lg:px-6 xl:px-9"
+                    className="relative mb-9 rounded-xl py-8 px-7 bg-white shadow-lg transition-all hover:shadow-md sm:p-9 lg:px-6 xl:px-9"
                     style={{ height: "100px", width: "100%" }}
                   >
                     <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-full w-24 h-24 bg-white border-4 border-white rounded-full overflow-hidden">
@@ -114,7 +114,7 @@ const About = () => {
                         alt={category.name}
                       />
                     </div>
-                    <h3 className="pt-2 text-base font-medium text-body-color text-center ">
+                    <h3 className="pt-2 text-base font-sans  text-xs text-center md:text-xss sm:text-xss ">
                       {category.name}
                     </h3>
                   </div>
@@ -123,6 +123,21 @@ const About = () => {
             ))}
           </div>
         </div>
+      </div>
+
+      {/* do you need legal advice */}
+      <div className=" text-black flex flex-col gap-5 justify-center items-center">
+        <h1 className="text-black font-semibold text-6xl">
+          Do you need legal advice?
+        </h1>
+        <p className="ont-sans text-xs text-left">
+          We understand that you may need help, but aren’t yet ready to sign an
+          engagement agreement. 
+          </p>
+          <p className="ont-sans text-xs text-left">
+          If you need a confidential obligation-free
+          consultation, contact us today.
+        </p>
       </div>
     </>
   );
