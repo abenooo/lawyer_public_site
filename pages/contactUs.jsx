@@ -1,4 +1,4 @@
-
+import ContactUs from "@/components/ContactUs";
 
 const contactUs = () => {
   return (
@@ -10,6 +10,7 @@ const contactUs = () => {
           </h1>
         </div>
       </div>
+      <ContactUs />
     </>
   );
 };
