@@ -1,9 +1,35 @@
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 import { GrLocation } from "react-icons/gr";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
 
 function ContactUs() {
+  // Validation Schema
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required("Name is required"),
+    email: Yup.string().email("Invalid email format").required("Email is required"),
+    phone: Yup.string().required("Phone number is required"),
+    subject: Yup.string().required("Subject is required"),
+    address: Yup.string().required("Address is required"),
+    message: Yup.string(),
+    typeofenquires: Yup.string().required("Type of enquiry is required"),
+  });
+
+  // Initial values for the form fields
+  const initialValues = {
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    address: '',
+    message: '',
+    typeofenquires: ''
+  };
+
+  // Custom input style
+  const inputStyle = "bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5";
   return (
     <div className="mx-6">
       <h1 className="font-semibold text-center text-4xl mt-14 ">
@@ -21,137 +47,85 @@ function ContactUs() {
         today.
       </p>
       <div className="md:flex gap-6  md:w-[75%] mx-auto md:mt-8">
-        <div className="basis-1/2">
-          <div className="md:grid grid-cols-2 gap-6">
-            <div className="my-3">
-              <label
-                for="name"
-                className="block mb-2 text-sm font-medium text-gray-900 "
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="bg-white border border-gray-300
-             text-gray-900 text-sm rounded-lg block  p-2.5 w-full "
-                placeholder="Full Name"
-                required
-              />
-              <p className="text-red-600"></p>
-            </div>
-            <div className="my-3">
-              <label
-                for="name"
-                className="block mb-2 text-sm font-medium text-gray-900 "
-              >
-                Email
-              </label>
-              <input
-                type="text"
-                id="email"
-                className="bg-white border border-gray-300
-             text-gray-900 text-sm rounded-lg block  p-2.5 w-full "
-                placeholder="example@gmail.com"
-                required
-              />
-              <p className="text-red-600"></p>
-            </div>
-            <div className="my-3">
-              <label
-                for="name"
-                className="block mb-2 text-sm font-medium text-gray-900 "
-              >
-                Phone Number
-              </label>
-              <input
-                type="text"
-                id="phone"
-                className="bg-white border border-gray-300
-             text-gray-900 text-sm rounded-lg block  p-2.5 w-full "
-                placeholder="phone Number"
-                required
-              />
-              <p className="text-red-600"></p>
-            </div>
-            <div className="my-3">
-              <label
-                for="name"
-                className="block mb-2 text-sm font-medium text-gray-900 "
-              >
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="bg-white border border-gray-300
-             text-gray-900 text-sm rounded-lg block  p-2.5 w-full "
-                placeholder="Mail Subject"
-                required
-              />
-              <p className="text-red-600"></p>
-            </div>
+        <Formik
 
-            <div className="my-3">
-              <label
-                for="typeofenquires"
-                className="block mb-2 text-sm font-medium text-gray-900 "
-              >
-                Type of Enquires
-              </label>
-              <select
-                id="typeofenquires"
-                className="bg-white border border-gray-300
-             text-gray-900 text-sm rounded-lg block  p-2.5 w-full "
-              >
-                <option selected>Select a type</option>
-                <option value="Family law">Family law</option>
-                <option value="Property law">Property law</option>
-                <option value="Insurance law">Insurance law</option>
-                <option value="Dispute resolution">Dispute resolution</option>
-                <option value="Building and Construction">
-                  Building and Construction
-                </option>
-              </select>
-            </div>
-            <div className="my-3">
-              <label
-                for="name"
-                className="block mb-2 text-sm font-medium text-gray-900 "
-              >
-                Address
-              </label>
-              <input
-                type="text"
-                id="Address"
-                className="bg-white border border-gray-300
-             text-gray-900 text-sm rounded-lg block  p-2.5 w-full "
-                placeholder="Address"
-                required
-              />
-              <p className="text-red-600"></p>
-            </div>
-            <div className="my-3">
-              <label
-                for="message"
-                className="block mb-2 text-sm font-medium text-gray-900"
-              >
-                Your message
-              </label>
-              <textarea
-                id="message"
-                rows="4"
-                className="block p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 "
-                placeholder="Write your thoughts here..."
-              ></textarea>
-            </div>
-          </div>
-          <div className="md:flex justify-center">
-            <button className="bg-cyan-600 hover:bg-cyan-900 py-2.5 w-full md:max-w-sm text-white font-bold rounded-lg mt-4">
-              Submit
-            </button>
-          </div>
-        </div>
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={(values) => {
+          console.log(values);
+        }}
+      >
+
+{() => (
+          <Form className="basis-1/2">
+              <div className="md:grid grid-cols-2 gap-6">
+                {/* Fields for the form */}
+                <div className="my-3">
+                  <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900">
+                    Name
+                  </label>
+                  <Field name="name" type="text" className={inputStyle} placeholder="Full Name" />
+                  <ErrorMessage name="name" component="p" className="text-red-600" />
+                </div>
+                <div className="my-3">
+                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900">
+                    Email
+                  </label>
+                  <Field name="email" type="email" className={inputStyle} placeholder="example@gmail.com" />
+                  <ErrorMessage name="email" component="p" className="text-red-600" />
+                </div>
+                <div className="my-3">
+                  <label htmlFor="phone" className="block mb-2 text-sm font-medium text-gray-900">
+                    Phone Number
+                  </label>
+                  <Field name="phone" type="text" className={inputStyle} placeholder="Phone Number" />
+                  <ErrorMessage name="phone" component="p" className="text-red-600" />
+                </div>
+                <div className="my-3">
+                  <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900">
+                    Subject
+                  </label>
+                  <Field name="subject" type="text" className={inputStyle} placeholder="Mail Subject" />
+                  <ErrorMessage name="subject" component="p" className="text-red-600" />
+                </div>
+                <div className="my-3">
+                  <label htmlFor="typeofenquires" className="block mb-2 text-sm font-medium text-gray-900">
+                    Type of Enquiries
+                  </label>
+                  <Field as="select" name="typeofenquires" className={inputStyle}>
+                    <option value="">Select a type</option>
+                    <option value="Family law">Family law</option>
+                    <option value="Property law">Property law</option>
+                    <option value="Insurance law">Insurance law</option>
+                    <option value="Dispute resolution">Dispute resolution</option>
+                    <option value="Building and Construction">Building and Construction</option>
+                  </Field>
+                  <ErrorMessage name="typeofenquires" component="p" className="text-red-600" />
+                </div>
+                <div className="my-3">
+                  <label htmlFor="address" className="block mb-2 text-sm font-medium text-gray-900">
+                    Address
+                  </label>
+                  <Field name="address" type="text" className={inputStyle} placeholder="Address" />
+                  <ErrorMessage name="address" component="p" className="text-red-600" />
+                </div>
+                <div className="my-3">
+                  <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900">
+                    Your message
+                  </label>
+                  <Field as="textarea" name="message" rows="4" className={inputStyle} placeholder="Write your thoughts here..." />
+                </div>
+              </div>
+              <div className="md:flex justify-center">
+                <button type="submit" className="bg-cyan-600 hover:bg-cyan-900 py-2.5 w-full md:max-w-sm text-white font-bold rounded-lg mt-4">
+                  Submit
+                </button>
+              </div>
+          </Form>
+        )}
+
+
+        </Formik>
         <div className="basis-1/2">
           <h1 className="mt-10 md:m-0 text-center font-semibold text-xl">
             Get In Touch
