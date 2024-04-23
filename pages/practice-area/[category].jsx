@@ -36,7 +36,7 @@ const CategoryPage = () => {
               ))}
             </ul>
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 mt-10">
             <ul>
               {itemDetails.map((item, index) => (
                 <li key={index} className="flex items-center mt-2">
