@@ -45,7 +45,7 @@ function ContactUs() {
 
   return (
     <div className="flex flex-col md:flex-row mb-4 lg:mx-20">
-       <div class="w-full bg-white h-full lg:mx-10 px-5">
+       <div className="w-full bg-white h-full lg:mx-10 px-5">
         <h1 className="mt-10 lg:mt-5 md:m-0 text-center font-semibold text-xl">
           How can you find us?
         </h1>

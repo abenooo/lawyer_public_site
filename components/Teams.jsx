@@ -122,7 +122,7 @@ function Teams() {
       <div className="text-center">
         <a
           href="#"
-          class="inline-block mx-auto text-center mt-8 border border-cyan-600 px-8 py-3 font-medium hover:bg-black hover:text-white"
+          className="inline-block mx-auto text-center mt-8 border border-cyan-600 px-8 py-3 font-medium hover:bg-black hover:text-white"
         >
           View More People
         </a>
