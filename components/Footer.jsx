@@ -8,6 +8,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
 function Footer() {
+  const year =  new Date().getFullYear();
   return (
     <div className="bg-slate-900 text-gray-400 py-20 px-8 mt-10">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:w-3/4 mx-auto">
@@ -142,7 +143,7 @@ function Footer() {
           <FaLinkedinIn />
         </a>
       </div>
-      <p className="text-center">@2024 Copyright</p>
+      <p className="text-center">{year} Solomon MOA Law Office. All Rights Reserved.</p>
     </div>
   );
 }
