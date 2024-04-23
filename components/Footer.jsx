@@ -110,35 +110,35 @@ function Footer() {
       <div className="flex justify-center items-center gap-2 my-8">
         <a
           href="#"
-          className="bg-gray-700 hover:bg-gray-400 p-3 rounded-full text-white"
+          className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           {" "}
           <FaFacebookF />
         </a>
         <a
           href="#"
-          className="bg-gray-700 hover:bg-gray-400 p-3 rounded-full text-white"
+          className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           {" "}
           <FaXTwitter />
         </a>
         <a
           href="#"
-          className="bg-gray-700 hover:bg-gray-400 p-3 rounded-full text-white"
+          className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           {" "}
           <GrInstagram />
         </a>
         <a
           href="#"
-          className="bg-gray-700 hover:bg-gray-400 p-3 rounded-full text-white"
+          className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           {" "}
           <FaTelegramPlane />
         </a>
         <a
           href="#"
-          className="bg-gray-700 hover:bg-gray-400 p-3 rounded-full text-white"
+          className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           <FaLinkedinIn />
         </a>
