@@ -45,11 +45,59 @@ function ContactUs() {
 
   return (
     <div className="flex flex-col md:flex-row mb-4 lg:mx-20">
+       <div class="w-full bg-white h-full lg:mx-10 px-5">
+        <h1 className="mt-10 lg:mt-5 md:m-0 text-center font-semibold text-xl">
+          How can you find us?
+        </h1>
+        <p className="text-justify mt-3">
+          Our seasoned team of attorneys is dedicated to providing you with the
+          professional advice and assistance you need. With a breadth of
+          knowledge in various legal domains, we're well-equipped to address
+          your queries, offer sound legal counsel, or arrange a detailed
+          consultation at your convenience. We’re committed to collaborating
+          with you to secure the most favorable outcome for your legal concerns.
+          Visit us today at our central location in Addis Ababa, Lideta,
+          directly opposite Landmark, and discover how we can support your
+          journey towards justice.
+        </p>
+        <div className="my-6 md:grid grid-cols-2">
+          <div className="flex items-center gap-3 my-3">
+            <GrLocation className="text-2xl text-cyan-600" />
+            <div className="text-xs">
+              <p className="text-sm font-semibold">Location</p>
+              <p>Addis Ababa lideta infront of xxx</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 my-3">
+            <FiPhoneCall className="text-2xl text-cyan-600" />
+            <div className="text-xs">
+              <p className="text-sm font-semibold">Phone Number</p>
+              <p>+251911111111</p>
+              <p>+251911111111</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 my-3">
+            <MdOutlineEmail className="text-2xl text-cyan-600" />
+            <div>
+              <p className="text-sm font-semibold">Email</p>
+              <p className="text-xs">support@gmail.com</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-3 my-3">
+            <FaRegClock className="text-2xl text-cyan-600" />
+            <div className="text-xs">
+              <p className="text-sm font-semibold">Timing</p>
+              <p>Mon - Fri 2:00- 11:00 LT</p>
+              <p>Saturday 2:00- 11:00 LT</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="w-full bg-white h-full px-5">
         <form ref={form} onSubmit={handleSubmit(sendEmail)}>
-          <div className="md:grid grid-cols-2 gap-6">
+          <div className="md:grid grid-cols-2 gap-6 lg:mt-5">
             {/* Name Field */}
-            <div className="my-3">
+            <div className="my-3 ">
               <label
                 htmlFor="name"
                 className="block mb-2 text-sm font-medium text-gray-900"
@@ -199,50 +247,7 @@ function ContactUs() {
           {result ? <p>Email successfully sent!</p> : null}
         </form>
       </div>
-      <div class="w-full bg-white h-full lg:mx-10 px-5">
-        <h1 className="mt-10 md:m-0 text-center font-semibold text-xl">
-          Get In Touch
-        </h1>
-        <p className="text-justify mt-3">
-          Our team of experienced Lawyers is here to provide you with expert
-          guidance and support. Whether you have questions about a specific
-          case, need advice on legal matters, or want to schedule a
-          consultation, we're here to help. Let's work together to find the best
-          solution for your legal needs!
-        </p>
-        <div className="my-6 md:grid grid-cols-2">
-          <div className="flex items-center gap-3 my-3">
-            <GrLocation className="text-2xl text-cyan-600" />
-            <div className="text-xs">
-              <p className="text-sm font-semibold">Location</p>
-              <p>Addis Ababa lideta infront of xxx</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 my-3">
-            <FiPhoneCall className="text-2xl text-cyan-600" />
-            <div className="text-xs">
-              <p className="text-sm font-semibold">Phone Number</p>
-              <p>+251911111111</p>
-              <p>+251911111111</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 my-3">
-            <MdOutlineEmail className="text-2xl text-cyan-600" />
-            <div>
-              <p className="text-sm font-semibold">Email</p>
-              <p className="text-xs">support@gmail.com</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 my-3">
-            <FaRegClock className="text-2xl text-cyan-600" />
-            <div className="text-xs">
-              <p className="text-sm font-semibold">Timing</p>
-              <p>Mon - Fri 2:00- 11:00 LT</p>
-              <p>Saturday 2:00- 11:00 LT</p>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 }
