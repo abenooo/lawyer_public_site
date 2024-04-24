@@ -24,19 +24,13 @@ jobs:
         npm install
         npm run build
       
-    # If your project's build output is in a folder (e.g., "build/"), add a step here to move the output to the root of the directory that the FTP action will upload.
-    # Example:
-    # - name: 🔄 Adjust Build Output
-    #   run: |
-    #     mv build/* ./
-    #     rm -r build/
-
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        # Make sure this points to your "public_html" directory
+        # This should point to the directory where your domain is hosted
+        # and should typically be "public_html/" unless your host has a different setup
         server-dir: public_html/
         dangerous-clean-slate: true
