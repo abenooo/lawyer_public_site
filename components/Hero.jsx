@@ -2,6 +2,7 @@ import Teams from "./Teams";
 import NewsCard from "./NewsCard"
 import PracticeCard from "./PracticeCard"
 import Image from "next/image";
+import Categories from "./Categories";
 function Hero() {
   return (
     <>
@@ -98,6 +99,7 @@ function Hero() {
       {/* </div> */}
       {/* teams */}
       <PracticeCard/>
+      <Categories />
       <Teams/>
       <NewsCard/>
     </>
