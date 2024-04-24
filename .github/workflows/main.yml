@@ -32,5 +32,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         # This should point to the directory where your domain is hosted
         # and should typically be "public_html/" unless your host has a different setup
-        server-dir: public_html/test
+        server-dir: public_html
         dangerous-clean-slate: true
