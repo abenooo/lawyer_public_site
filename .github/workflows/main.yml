@@ -1,11 +1,15 @@
 on: 
   push:
-    branches: main
+    branches: 
+      - main
+
 name: 🚀 Deploy website on push
+
 jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
@@ -19,6 +23,13 @@ jobs:
       run: |
         npm install
         npm run build
+      
+    # If your project's build output is in a folder (e.g., "build/"), add a step here to move the output to the root of the directory that the FTP action will upload.
+    # Example:
+    # - name: 🔄 Adjust Build Output
+    #   run: |
+    #     mv build/* ./
+    #     rm -r build/
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
@@ -26,5 +37,6 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        # Make sure this points to your "public_html" directory
         server-dir: public_html/
         dangerous-clean-slate: true
