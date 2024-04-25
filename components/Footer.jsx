@@ -39,23 +39,23 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
+              <a href="/about" className="hover:underline hover:text-gray-200">
                 About Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
+              <a href="/contactUs" className="hover:underline hover:text-gray-200">
                 Contact Us
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
+              <a href="/news" className="hover:underline hover:text-gray-200">
                 News
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
-                Service
+              <a href="/blog" className="hover:underline hover:text-gray-200">
+                Blog
               </a>
             </li>
           </ul>
