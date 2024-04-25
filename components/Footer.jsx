@@ -8,7 +8,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 
 function Footer() {
-  const year =  new Date().getFullYear();
+  const year = new Date().getFullYear();
   return (
     <div className="bg-slate-900 text-gray-400 py-20 px-8 mt-10">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:w-3/4 mx-auto">
@@ -20,7 +20,7 @@ function Footer() {
               className="h-8 w-8 rounded-xl"
             />
             <h3 className="text-lg font-semibold text-gray-200">
-            Solomon Mulugeta Abate Consultant & Attorney at Law
+              Solomon Mulugeta Abate Consultant & Attorney at Law
             </h3>
           </div>
 
@@ -44,7 +44,10 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="/contactUs" className="hover:underline hover:text-gray-200">
+              <a
+                href="/contactUs"
+                className="hover:underline hover:text-gray-200"
+              >
                 Contact Us
               </a>
             </li>
@@ -94,16 +97,20 @@ function Footer() {
         <div className="mt-3 col-span-2 md:col-span-1">
           <h3 className="text-lg font-semibold text-gray-200">Information</h3>
           <div className="flex items-center gap-3 my-2 ml-3">
-            <GrLocation className="text-xl text-cyan-600" />
-            <p className="text-sm">Addis Ababa lideta infront of xxx</p>
+            <GrLocation className="text-2xl text-cyan-600" />
+            <div className="flex flex-col text-sm">
+              <p>Liberia St, Nur Building 1st Floor, Office #105</p>
+              <p>Addis Ababa, Ethiopia</p>
+            </div>
           </div>
+
           <div className="flex items-center gap-3 my-2 ml-3">
             <FiPhoneCall className="text-xl text-cyan-600" />
-            <p>+251911111111 /+251911111111 </p>
+            <p>+251944246334 || +251944162261 </p>
           </div>
           <div className="flex items-center gap-3 my-2 ml-3">
             <MdOutlineEmail className="text-xl text-cyan-600" />
-            <p>support@gmail.com</p>
+            <p>psolomon39@yahoo.com || psolaxis@gmail.com</p>
           </div>
         </div>
       </div>
@@ -143,7 +150,9 @@ function Footer() {
           <FaLinkedinIn />
         </a>
       </div>
-      <p className="text-center">{year} Solomon MOA Law Office. All Rights Reserved.</p>
+      <p className="text-center">
+        {year} Solomon MOA Law Office. All Rights Reserved.
+      </p>
     </div>
   );
 }
