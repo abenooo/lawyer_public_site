@@ -20,13 +20,13 @@ function Hero() {
     <div className="md:flex pb-28 pt-10 space-x-3">
       <a
         className="border border-cyan-600 px-8 py-3 font-medium hover:bg-white hover:text-black"
-        href="#"
+        href="/contactUs"
       >
         Contact us
       </a>
       <a
         className="border border-cyan-600 px-8 py-3 font-medium hover:bg-white hover:text-black"
-        href="#"
+        href="/practice-area/insurance-law"
       >
         Practice area
       </a>
