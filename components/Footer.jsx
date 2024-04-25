@@ -15,12 +15,12 @@ function Footer() {
         <div className="col-span-2 md:col-span-1">
           <div className="flex gap-3">
             <img
-              src="/assets/logo.jpeg"
+              src="/assets/logo.jpg"
               alt="logo"
               className="h-8 w-8 rounded-xl"
             />
             <h3 className="text-lg font-semibold text-gray-200">
-              Solomon lawyer
+            Solomon Mulugeta Abate Consultant & Attorney at Law
             </h3>
           </div>
 
