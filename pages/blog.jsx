@@ -4,7 +4,8 @@ function blog() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    fetch("https://lawyerpw.onrender.com/api/blogCategory")
+    const url =  `${process.env.BASE_URL}/api/blogCategory`;
+    fetch(url)
       .then((response) => response.json())
       .then((data) => setCategories(data))
       .catch((error) => console.error("Error fetching data: ", error));
