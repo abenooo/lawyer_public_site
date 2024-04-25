@@ -30,9 +30,5 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        protocol: ftps
-        port: 21
-        # This should point to the directory where your domain is hosted
-        # and should typically be "public_html/" unless your host has a different setup
         server-dir: public_html/www/
         dangerous-clean-slate: true
