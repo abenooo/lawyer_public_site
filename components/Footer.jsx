@@ -34,7 +34,7 @@ function Footer() {
           <h3 className="text-lg font-semibold text-gray-200">Quick Links</h3>
           <ul className="ml-3">
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
+              <a href="/" className="hover:underline hover:text-gray-200">
                 Home
               </a>
             </li>
