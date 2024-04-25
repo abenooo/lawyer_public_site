@@ -19,13 +19,13 @@ const MyNavbar = () => {
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <Image
-              src="/assets/logo.jpeg"
+              src="/assets/logo.jpg"
               alt="Flowbite Logo"
               width={60} // specify the width
               height={60} // specify the height
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Lawyer Solomon
+            Solomon Mulugeta Abate
             </span>
           </a>
           <button
