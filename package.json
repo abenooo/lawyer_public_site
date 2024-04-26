@@ -15,7 +15,6 @@
     "flowbite-react": "^0.8.0",
     "formik": "^2.4.5",
     "framer-motion": "5.3.0",
-    "google-maps-react": "^2.0.6",
     "leaflet": "^1.9.4",
     "next": "^14.2.1",
     "nodemailer": "^6.9.13",
