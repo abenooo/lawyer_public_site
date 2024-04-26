@@ -109,9 +109,12 @@ function Footer() {
             <p>+251944246334 || +251944162261 </p>
           </div>
           <div className="flex items-center gap-3 my-2 ml-3">
-            <MdOutlineEmail className="text-xl text-cyan-600" />
-            <p>psolomon39@yahoo.com || psolaxis@gmail.com</p>
-          </div>
+    <MdOutlineEmail className="text-2xl text-cyan-600" />
+    <p className="text-sm">
+        <a href="mailto:psolomon39@yahoo.com" class="hover:underline">psolomon39@yahoo.com</a> ||
+        <a href="mailto:psolaxis@gmail.com" class="hover:underline">psolaxis@gmail.com</a>
+    </p>
+</div>
         </div>
       </div>
       <div className="flex justify-center items-center gap-2 my-8">
