@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }) {
       {isHomePage && <Hero />}
       <div className="fixed bottom-0 right-0 mb-4 mr-4">
             <a href={`https://wa.me/${phoneNumber}?text=${message}`} target="_blank" rel="noopener noreferrer">
-                <IoLogoWhatsapp className="h-20 w-20 bg-green-600 rounded-full shadow-lg hover:bg-green-700" />
+                <IoLogoWhatsapp className="h-20 w-20 bg-cyan-600 rounded-full shadow-lg hover:bg-green-700" />
             </a>
         </div>
       <Component {...pageProps} />
