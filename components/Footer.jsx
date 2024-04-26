@@ -111,11 +111,11 @@ function Footer() {
           <div className="flex items-center gap-3 my-2 ml-3">
             <MdOutlineEmail className="text-2xl text-cyan-600" />
             <p className="text-sm">
-              <a href="mailto:psolomon39@yahoo.com" class="hover:underline">
+              <a href="mailto:psolomon39@yahoo.com" className="hover:underline">
                 psolomon39@yahoo.com
               </a>{" "}
               ||
-              <a href="mailto:psolaxis@gmail.com" class="hover:underline">
+              <a href="mailto:psolaxis@gmail.com" className="hover:underline">
                 psolaxis@gmail.com
               </a>
             </p>
