@@ -44,8 +44,9 @@ function ContactUs() {
     "bg-white border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5";
 
   return (
+    <>
     <div className="flex flex-col md:flex-row mb-4 lg:mx-20">
-       <div className="w-full bg-white h-full lg:mx-10 px-5">
+      <div className="w-full bg-white h-full lg:mx-10 px-5">
         <h1 className="mt-10 lg:mt-5 md:m-0 text-center font-semibold text-xl">
           How can you find us?
         </h1>
@@ -60,35 +61,51 @@ function ContactUs() {
           directly opposite Landmark, and discover how we can support your
           journey towards justice.
         </p>
+        psolomon39@yahoo.com ||psolaxis@gmail.com
         <div className="my-6 md:grid grid-cols-2">
           <div className="flex items-center gap-3 my-3">
             <GrLocation className="text-2xl text-cyan-600" />
             <div className="text-xs">
               <p className="text-sm font-semibold">Location</p>
-              <p>Addis Ababa lideta infront of xxx</p>
+              <p>Liberia St, Nur Building 1st Floor, Office #105</p>
+              <p>Addis Ababa,Ethiopia</p>
             </div>
           </div>
           <div className="flex items-center gap-3 my-3">
             <FiPhoneCall className="text-2xl text-cyan-600" />
             <div className="text-xs">
               <p className="text-sm font-semibold">Phone Number</p>
-              <p>+251911111111</p>
-              <p>+251911111111</p>
+              <p>+251-944246334</p>
+              <p>+251-944162261</p>
             </div>
           </div>
           <div className="flex items-center gap-3 my-3">
             <MdOutlineEmail className="text-2xl text-cyan-600" />
             <div>
               <p className="text-sm font-semibold">Email</p>
-              <p className="text-xs">support@gmail.com</p>
+              <p className="text-xs">psolomon39@yahoo.com</p>
+              <p>psolaxis@gmail.com</p>
             </div>
           </div>
           <div className="flex items-center gap-3 my-3">
             <FaRegClock className="text-2xl text-cyan-600" />
             <div className="text-xs">
               <p className="text-sm font-semibold">Timing</p>
-              <p>Mon - Fri 2:00- 11:00 LT</p>
-              <p>Saturday 2:00- 11:00 LT</p>
+              <p className="flex justify-start items-center">
+                <span className="w-10 font-mono">Mon:</span>2:00 - 11:00 LT
+              </p>
+              <p className="flex justify-start items-center">
+                <span className="w-10 font-mono">Tue:</span>2:00 - 11:00 LT
+              </p>
+              <p className="flex justify-start items-center">
+                <span className="w-10 font-mono">Wed:</span>2:00 - 11:00 LT
+              </p>
+              <p className="flex justify-start items-center">
+                <span className="w-10 font-mono">Thu:</span>2:00 - 11:00 LT
+              </p>
+              <p className="flex justify-start items-center">
+                <span className="w-10 font-mono">Fri:</span>2:00 - 11:00 LT
+              </p>
             </div>
           </div>
         </div>
@@ -247,8 +264,8 @@ function ContactUs() {
           {result ? <p>Email successfully sent!</p> : null}
         </form>
       </div>
-     
     </div>
+    </>
   );
 }
 
