@@ -1,4 +1,5 @@
 import ContactUs from "@/components/ContactUs";
+import Map from "@/components/Map";
 
 const contactUs = () => {
   return (
@@ -29,6 +30,7 @@ const contactUs = () => {
         </div>
       </div>
       <ContactUs />
+      <Map/>
     </>
   );
 };
