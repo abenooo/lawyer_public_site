@@ -1,8 +1,8 @@
 import Teams from "./Teams";
 import NewsCard from "./NewsCard"
 import PracticeCard from "./PracticeCard"
-import Image from "next/image";
 import Categories from "./Categories";
+import AttornyCategory from "./AttornyCategory";
 function Hero() {
   return (
     <>
@@ -98,8 +98,36 @@ function Hero() {
       </div>
       {/* </div> */}
       {/* teams */}
-      <PracticeCard/>
-      <Categories />
+      <div className="flex flex-wrap md:w-[80%] mx-auto my-10">
+        <div className="w-full md:w-2/5">
+          <div className=" bg-white shadow-md">
+            <div className="bg-white rounded-t-3xl items-center gap-6  md:flex-row justify-around md:p-10">
+              <p className="font-sans  text-4xl py-5 md:text-5xl lg:text-6xl text-center">What we do?</p>
+
+              <p className="font-sans text-xs text-left px-4  text-gray-900">
+                SLF Lawyers is a new breed of law firm. We don't stand on
+                tradition or outdated ways of doing business.
+              </p>
+              <p className="font-sans text-xs text-left px-4  text-gray-900 my-4">
+                We take a team approach to dealing with the more complex legal
+                problems that cross our desks, working on the very reasonable
+                assumption that two or more heads are better than one. We take
+                the time to understand the whole picture, and our lawyers think
+                outside the box to find solutions in even the most complex legal
+                situations.
+              </p>
+              <p className="font-sans text-xs text-left px-4 text-gray-900 my-4">
+                We don't hide behind legalese or arcane legal procedures,
+                clearly communicating our process every step of the way. The
+                focus is on getting results for our clients, not on how our
+                foyer looks.
+              </p>
+            </div>
+          </div>
+        </div>
+     <AttornyCategory />
+      </div>
+      {/* <Categories /> */}
       <Teams/>
       <NewsCard/>
     </>
