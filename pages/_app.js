@@ -1,4 +1,3 @@
-import "../styles/leaflet.css";
 import "@/styles/globals.css";
 import MyNavbar from "@/components/navbar";
 import Hero from "@/components/Hero";
