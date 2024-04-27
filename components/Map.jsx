@@ -29,7 +29,7 @@ const Map = () => {
       {loadMap && (
         <MapContainer
           center={position}
-          zoom={11} // Lower the zoom level
+          zoom={15} // Lower the zoom level
           scrollWheelZoom={false}
           style={{ height: "500px", width: "100vw" }} // Set a fixed height and use 100vw for full width
         >
