@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { motion } from 'framer-motion';
+import AttornyCategory from "@/components/AttornyCategory";
 const About = () => {
   // Define the categories
   const categories = [
@@ -98,40 +98,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full md:w-3/5 px-4 my-20">
-  <div className="flex flex-wrap -mx-2">
-    {categories.map((category, index) => (
-      <motion.div
-        key={index}
-        className="w-full md:w-1/3 px-2 mb-10"
-        variants={variants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}  // Ensures animation triggers when 50% of the element is in view
-        transition={{ duration: 0.5, delay: index * 0.1 }}
-      >
-        <a href={`/practice-area/${category.name.replace(/ /g, "-").toLowerCase()}`}>
-          <motion.div
-            className="relative mb-9 rounded-xl py-8 px-7 bg-white shadow-lg transition-all hover:shadow-md sm:p-9 lg:px-6 xl:px-9"
-            whileHover={{ scale: 1.05 }}
-            style={{ height: "100px", width: "100%" }}
-          >
-            <div className="absolute top-10 left-1/2 transform -translate-x-1/2 -translate-y-full w-24 h-24 bg-white border-4 border-white rounded-full overflow-hidden">
-              <img
-                className="w-16 h-16 object-cover"
-                src={category.image}
-                alt={category.name}
-              />
-            </div>
-            <h3 className="pt-2 text-base font-sans text-xs text-center md:text-xss sm:text-xss">
-              {category.name}
-            </h3>
-          </motion.div>
-        </a>
-      </motion.div>
-    ))}
-  </div>
-</div>
+     <AttornyCategory />
       </div>
 
       
