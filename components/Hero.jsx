@@ -6,13 +6,13 @@ import AttornyCategory from "./AttornyCategory";
 function Hero() {
   return (
     <>
-     <div className="bg-[url('/assets/homepage.png')] h-[85vh] bg-cover">
+     <div className="bg-[url('/assets/meeting.jpg')] h-[85vh] bg-cover">
   <div className="text-white flex flex-col gap-5 justify-center items-center h-full">
-    <h1 className="text-white font-semibold text-4xl md:text-5xl lg:6xl xl:7xl">
-      SLF Lawyers
+    <h1 className="text-gray-700 font-semibold text-4xl md:text-5xl lg:6xl xl:7xl">
+      SML Lawyers
     </h1>
-    <p className="mx-3 text-center text-medium md:w-2/5">
-      SLF Lawyers is a new breed of law firm. We don’t stand on tradition
+    <p className="mx-3 text-center text-medium md:w-2/5 text-gray-700">
+    SML Lawyers is a new breed of law firm. We don’t stand on tradition
       or outdated ways of doing business. We don’t hide behind legalese or
       arcane legal procedures. The focus is on getting results for our
       clients, not on how our foyer looks.
@@ -38,30 +38,37 @@ function Hero() {
       <div className="-mt-20 shadow-2xl w-11/12 mx-auto  rounded-3xl  md:w-3/5 ">
         <div className=" bg-gray-100 rounded-t-3xl flex flex-col items-center gap-6 py-3 font-medium md:flex-row justify-around md:p-10">
           <h2 className="underline underline-offset-8 decoration-2 decoration-orange-500">
-            MELBOURNE
+            ADDIS ABABA 
           </h2>
           <h2 className="underline underline-offset-8 decoration-2 decoration-orange-500">
-            SYDNEY
+           BAHIR DAR
           </h2>
           <h2 className="underline underline-offset-8 decoration-2 decoration-orange-500">
-            BRISBANE
+           HAWASSA
           </h2>
           <h2 className="underline underline-offset-8 decoration-2 decoration-orange-500">
-            PERTH
+           MEKELLE
           </h2>
           <h2 className="underline underline-offset-8 decoration-2 decoration-orange-500">
-            GOLD COAST
+           ADAMA
           </h2>
         </div>
         <div className="md:grid grid-cols-3 gap-4 p-4">
+          {/* <div>
+            <img className="my-4" src="https://res.cloudinary.com/teepublic/image/private/s--qc1rJxw2--/c_fit,g_north_west,h_840,w_840/co_36538b,e_outline:40/co_36538b,e_outline:inner_fill:1/co_ffffff,e_outline:40/co_ffffff,e_outline:inner_fill:1/co_bbbbbb,e_outline:3:1000/c_mpad,g_center,h_1260,w_1260/b_rgb:eeeeee/t_watermark_lock/c_limit,f_jpg,h_630,q_90,w_630/v1591543046/production/designs/11083852_0.jpg" />
+          </div> */}
           <div>
-            <img src="https://slflawyers.com.au/wp-content/uploads/2020/12/Logo.jpg" />
-          </div>
+          <img
+              src="/assets/logo.webp"
+              alt="logo"
+              className="rounded-xl mt-5"
+            />
+            </div>
           <div className="text-justify  md:py-8">
             <p className="mb-4">
-              SLF Lawyers is a multidisciplinary team of respected legal
-              professionals with offices in Melbourne, Sydney, Brisbane, Perth
-              and the Gold Coast.
+              SMA Lawyers is a multidisciplinary team of respected legal
+              professionals with offices in Addis Ababa, Bahir Dar, Hawassa, Mekelle
+              and the Adama.
             </p>
             <p className="mb-4">
               Combining years of legal experience with our commercially minded
@@ -77,7 +84,7 @@ function Hero() {
           </div>
           <div className="text-justify md:py-8">
             <p className="mb-4">
-              Our experienced team of lawyers in Australia combine a depth of
+              Our experienced team of lawyers in Ethiopia combine a depth of
               skill covering Commercial, Property, Insurance, Employment and
               Finance matters with the ability to listen, research and
               understand the complete picture
@@ -89,7 +96,7 @@ function Hero() {
               rigour and unwavering focus.
             </p>
             <p className="mb-4">
-              To learn more about our Australian law firm’s many areas of
+              To learn more about our Ethiopia  law office's many areas of
               practice, visit our Practice Areas page. For confidential advice
               on your legal issue, please Contact Us.
             </p>
@@ -105,7 +112,7 @@ function Hero() {
               <p className="font-sans  text-4xl py-5 md:text-5xl lg:text-6xl text-center">What we do?</p>
 
               <p className="font-sans text-xs text-left px-4  text-gray-900">
-                SLF Lawyers is a new breed of law firm. We don't stand on
+                SMA Lawyers is a new breed of law firm. We don't stand on
                 tradition or outdated ways of doing business.
               </p>
               <p className="font-sans text-xs text-left px-4  text-gray-900 my-4">

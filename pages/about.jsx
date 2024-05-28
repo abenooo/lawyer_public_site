@@ -41,10 +41,10 @@ const About = () => {
   
   return (
     <>
-      <div className="bg-[url('https://slflawyers.com.au/wp-content/uploads/2023/02/Untitled-design-2023-02-03T120344.159.png')] h-[50vh] bg-cover">
+      <div className="bg-[url('')] h-[50vh] bg-cover">
         <div className="text-white flex  justify-center items-center h-full text-center">
           <h1 className=" font-sans text-white font-semibold text-4xl md:6xl lg:6xl">
-            About SLF Lawyers
+            About SMA Lawyers
           </h1>
         </div>
       </div>
@@ -52,7 +52,7 @@ const About = () => {
         <div className="bg-white rounded-t-3xl items-center gap-6 py-3 md:flex-row justify-around md:p-10">
           <p className="font-sans text-sm text-left  text-gray-900 dark:text-gray-800 px-4">
             {" "}
-            SLF Lawyers is a new breed of law firm. We don’t stand on tradition
+            SMA Lawyers is a new breed of law firm. We don’t stand on tradition
             or outdated ways of doing business.
           </p>
 
@@ -78,7 +78,7 @@ const About = () => {
               <p className="font-sans  text-4xl py-5 md:text-5xl lg:text-6xl text-center">What we do?</p>
 
               <p className="font-sans text-xs text-left px-4  text-gray-900">
-                SLF Lawyers is a new breed of law firm. We don't stand on
+                SMA Lawyers is a new breed of law firm. We don't stand on
                 tradition or outdated ways of doing business.
               </p>
               <p className="font-sans text-xs text-left px-4  text-gray-900 my-4">

@@ -8,8 +8,8 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   const isHomePage = router.pathname === "/";
-  const phoneNumber = "+251910979060"; // Replace 'YourPhoneNumber' with your actual number
-  const message = encodeURIComponent("Hello, I'm interested in your services!"); 
+  const phoneNumber = "+251944246334"; // Replace 'YourPhoneNumber' with your actual number
+  const message = encodeURIComponent("Hello, Solomon Mulugeta Law Office. How can I help you?"); 
   return (
     <>
       <MyNavbar />

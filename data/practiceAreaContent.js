@@ -41,7 +41,7 @@ const practiceAreaContent = {
   },
   "commercial-law": {
     title: "About Commercial Law",
-    description: "SLF Lawyers are knowledgeable in the commercial arena. We provide comprehensive advice on various aspects of commercial law from contractual agreements to business acquisitions.",
+    description: "SMA Lawyers are knowledgeable in the commercial arena. We provide comprehensive advice on various aspects of commercial law from contractual agreements to business acquisitions.",
     details: [
       "Drafting and advice on various simple and complex commercial agreements",
       "Drafting and advice on Heads of Agreements and Joint Venture Agreements",

@@ -20,7 +20,7 @@ function Footer() {
               className="h-8 w-8 rounded-xl"
             />
             <h3 className="text-lg font-semibold text-gray-200">
-              Solomon Mulugeta Abate Consultant & Attorney at Law
+              Solomon Mulugeta & Associates
             </h3>
           </div>
 
@@ -112,9 +112,8 @@ function Footer() {
             <MdOutlineEmail className="text-2xl text-cyan-600" />
             <p className="text-sm">
               <a href="mailto:psolomon39@yahoo.com" className="hover:underline">
-                psolomon39@yahoo.com
+                psolomon39@yahoo.com ||
               </a>{" "}
-              ||
               <a href="mailto:psolaxis@gmail.com" className="hover:underline">
                 psolaxis@gmail.com
               </a>
@@ -144,22 +143,23 @@ function Footer() {
           {" "}
           <GrInstagram />
         </a>
+       
         <a
-          href="#"
+          href="https://t.me/+251944246334"
           className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
-          {" "}
           <FaTelegramPlane />
         </a>
+
         <a
-          href="#"
+          href="https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/"
           className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           <FaLinkedinIn />
         </a>
       </div>
       <p className="text-center">
-        {year} Solomon MOA Law Office. All Rights Reserved.
+        {year} Solomon Mulugeta & Associates. All Rights Reserved.
       </p>
     </div>
   );

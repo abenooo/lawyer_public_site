@@ -9,14 +9,14 @@ const Accordion = () => {
   };
 
   const questions = [
-    { header: "What services do SLF Lawyers offer?", text: "SLF Lawyers provides a comprehensive range of legal services, including Building & Construction, Commercial Litigation, Commercial Law, Workplace Relations & Safety, Estate Planning & Disputes, Family Law, Franchising & Licensing, Insolvency, Insurance Law, Property Law, Immigration, Banking & Finance, and Italian Law." },
-    { header: "Where are SLF Lawyers' offices located?", text: "SLF Lawyers has offices in major Australian cities including Melbourne, Sydney, Brisbane, Perth, and the Gold Coast." },
-    { header: "How can SLF Lawyers assist with commercial litigation?", text: "Our team combines years of legal expertise with a commercially minded approach to help clients navigate complex litigation matters, aiming for favourable outcomes in all situations." },
-    { header: "What makes SLF Lawyers different from other law firms?", text: "SLF Lawyers is distinguished by its multidisciplinary team, attention to detail, thorough preparation, intelligent strategy, and efficient service delivery, ensuring comprehensive support for both individuals and businesses." },
-    { header: "How can I contact SLF Lawyers for a confidential consultation?", text: "For a confidential consultation, please visit our website and use the Contact Us section to connect with us." },
-    { header: "What areas of practice do SLF Lawyers specialize in for individual clients?", text: "For individual clients, we specialize in Family Law, Estate Planning & Disputes, Insolvency, and Immigration Law, providing personalized and thorough legal assistance." },
-    { header: "How does SLF Lawyers support businesses with their legal needs?", text: "We offer services in Commercial Law, Workplace Relations & Safety, Franchising & Licensing, and more, tailoring our approach to meet the unique needs of both small and large businesses." },
-    { header: "What resources are available on the SLF Lawyers website for understanding specific legal areas?", text: "Our website features detailed information on each area of practice, including insights into the expertise of our lawyers and how they can assist you. Click on any area of practice listed to learn more." }
+    { header: "What services do SMA Lawyers offer?", text: "SMA Lawyers provides a comprehensive range of legal services, including Building & Construction, Commercial Litigation, Commercial Law, Workplace Relations & Safety, Estate Planning & Disputes, Family Law, Franchising & Licensing, Insolvency, Insurance Law, Property Law, Immigration, Banking & Finance, and Italian Law." },
+    { header: "Where are SMA Lawyers' offices located?", text: "SMA Lawyers has offices in major Ethiopia cities including Addis Ababa, Bahir Dar, Hawassa, Mekelle and the Adama." },
+    { header: "How can SMA Lawyers assist with commercial litigation?", text: "Our team combines years of legal expertise with a commercially minded approach to help clients navigate complex litigation matters, aiming for favourable outcomes in all situations." },
+    { header: "What makes SMA Lawyers different from other law firms?", text: "SMA Lawyers is distinguished by its multidisciplinary team, attention to detail, thorough preparation, intelligent strategy, and efficient service delivery, ensuring comprehensive support for both individuals and businesses." },
+    { header: "How can I contact SMA Lawyers for a confidential consultation?", text: "For a confidential consultation, please visit our website and use the Contact Us section to connect with us." },
+    { header: "What areas of practice do SMA Lawyers specialize in for individual clients?", text: "For individual clients, we specialize in Family Law, Estate Planning & Disputes, Insolvency, and Immigration Law, providing personalized and thorough legal assistance." },
+    { header: "How does SMA Lawyers support businesses with their legal needs?", text: "We offer services in Commercial Law, Workplace Relations & Safety, Franchising & Licensing, and more, tailoring our approach to meet the unique needs of both small and large businesses." },
+    { header: "What resources are available on the SMA Lawyers website for understanding specific legal areas?", text: "Our website features detailed information on each area of practice, including insights into the expertise of our lawyers and how they can assist you. Click on any area of practice listed to learn more." }
 ];
 
 
