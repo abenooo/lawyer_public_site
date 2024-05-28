@@ -156,12 +156,35 @@ const MyNavbar = () => {
             >
               <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-3 md:px-6">
                 <ul>
-                  <li>
-                    <a href="/practice-area/insurance-law">
+                <li>
+                    <a href="/practice-area/dispute-resolution/">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Insurance Law</div>
+                        <div className="font-semibold">
+                        Alternative Dispute Resolution
+                        </div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Details about the insurance law practice.
+                        Alternative Dispute Resolution Service and support group
+                        </span>
+                      </a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/practice-area/construction-infrastructure">
+                      <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <div className="font-semibold">Construction and Infrastructure Law</div>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                          Details about the Construction Infrastructure Law.
+                        </span>
+                      </a>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="/practice-area/commercial-law">
+                      <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <div className="font-semibold">Commercial Law </div>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                        Commercial Law services and support.
                         </span>
                       </a>
                     </a>
@@ -170,40 +193,20 @@ const MyNavbar = () => {
                     <a href="/practice-area/commercial-litigation/">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                         <div className="font-semibold">
-                          Commercial Litigation
+                          Commercial Litigation 
                         </div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
+                         About Commercial Litigation  law.
                         </span>
                       </a>
                     </a>
                   </li>
                   <li>
-                    <a href="/practice-area/family-law">
+                    <a href="/practice-area/employment-law ">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Family Law</div>
+                        <div className="font-semibold">Employment  Law </div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
-                        </span>
-                      </a>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/practice-area/commercial-law">
-                      <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Commercial Law</div>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
-                        </span>
-                      </a>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/practice-area/commercial-law">
-                      <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Commercial Law</div>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
+                          About Employment Law.
                         </span>
                       </a>
                     </a>
@@ -211,53 +214,42 @@ const MyNavbar = () => {
                 </ul>
                 <ul>
                   <li>
-                    <a href="/practice-area/insurance-law">
+                    <a href="/practice-area/estate-planning-disputes">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Insurance Law</div>
+                        <div className="font-semibold">Corporate Services</div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Details about the insurance law practice.
+                          Details about the Corporate Services.
+                        </span>
+                      </a>
+                    </a>
+                  </li>
+                
+                  <li>
+                    <a href="/practice-area/tax-customs">
+                      <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                        <div className="font-semibold">Tax & Customs</div>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                          Tax & Customs services and support.
                         </span>
                       </a>
                     </a>
                   </li>
                   <li>
-                    <a href="/practice-area/commercial-litigation/">
+                    <a href="/practice-area/trade-practice-anti-trust">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">
-                          Commercial Litigation
-                        </div>
+                        <div className="font-semibold">Trade Practice & Anti-trust</div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
+                        Trade Practice & Anti-trust services and support.
                         </span>
                       </a>
                     </a>
                   </li>
                   <li>
-                    <a href="/practice-area/family-law">
+                    <a href="/practice-area/intellectual-property-technology">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Family Law</div>
+                        <div className="font-semibold">Intellectual Property Technology</div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
-                        </span>
-                      </a>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/practice-area/commercial-law">
-                      <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Commercial Law</div>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
-                        </span>
-                      </a>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/practice-area/commercial-law">
-                      <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Commercial Law</div>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
+                        Intellectual Property Technology Services and Support.
                         </span>
                       </a>
                     </a>
@@ -265,43 +257,43 @@ const MyNavbar = () => {
                 </ul>
                 <ul>
                   <li>
-                    <a href="/practice-area/insurance-law">
+                    <a href="/practice-area/real-estate-property">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Insurance Law</div>
+                        <div className="font-semibold">Real Estate Property</div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Details about the insurance law practice.
+                          Details about the Real Estate Property practice.
                         </span>
                       </a>
                     </a>
                   </li>
                   <li>
-                    <a href="/practice-area/commercial-litigation/">
+                    <a href="/practice-area/project-finance-ppp-public-procurement">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                         <div className="font-semibold">
-                          Commercial Litigation
+                        Project Finance,PPP & Public Procurement
                         </div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
+                        Project Finance, PPP & Public Procurement services and support.
                         </span>
                       </a>
                     </a>
                   </li>
                   <li>
-                    <a href="/practice-area/family-law">
+                    <a href="/practice-area/mining-energy">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Family Law</div>
+                        <div className="font-semibold">Mining Energy</div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
+                          Mining Energy services and support.
                         </span>
                       </a>
                     </a>
                   </li>
                   <li>
-                    <a href="/practice-area/commercial-law">
+                    <a href="/practice-area/banking-financial-services">
                       <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div className="font-semibold">Commercial Law</div>
+                        <div className="font-semibold">Banking & Financial Services</div>
                         <span className="text-sm text-gray-500 dark:text-gray-400">
-                          Family law services and support.
+                        Banking & Financial Services law services and support.
                         </span>
                       </a>
                     </a>
