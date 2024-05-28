@@ -75,7 +75,7 @@ const OurPeople = () => {
 
   return (
     <>
-      <div className="bg-[url('https://slflawyers.com.au/wp-content/webpc-passthru.php?src=https://slflawyers.com.au/wp-content/uploads/2023/02/Untitled-design-2023-02-03T121416.298.png')] h-[50vh] bg-cover">
+      <div className="bg-[url('https://kerkmandunn.com/wp-content/uploads/2022/02/people-sitting-at-a-conference-room-table_s.jpg')] h-[50vh] bg-cover brightness-10">
         <div className="text-white flex justify-center items-center h-full">
           <h1 className="font-sans lg:mt-40 md:mt-20 text-white font-semibold md:5xl lg:text-6xl text-3xl text-center">
             Our People

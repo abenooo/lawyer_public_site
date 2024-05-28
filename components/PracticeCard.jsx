@@ -6,7 +6,7 @@ function PracticeCard() {
       </h1>
       <p className="text-center mt-3 mb-6">
         Click on an area of practice below to learn more about the expertise of
-        our lawyers in Australia. For more information, or to request a
+        our lawyers in Ethiopia. For more information, or to request a
         confidential consultation, please{" "}
         <a href="#" className="text-cyan-600">
           Contact Us.

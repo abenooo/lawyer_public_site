@@ -106,6 +106,9 @@ function ContactUs() {
               <p className="flex justify-start items-center">
                 <span className="w-10 font-mono">Fri:</span>2:00 - 11:00 LT
               </p>
+              <p className="flex justify-start items-center">
+                <span className="w-10 font-mono">Sat:</span>2:00 -  6:00 LT
+              </p>
             </div>
           </div>
         </div>
