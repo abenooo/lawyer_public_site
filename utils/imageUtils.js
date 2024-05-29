@@ -14,7 +14,8 @@ const getImageUrl = (category) => {
       "insurance-law": "Insurance-Law-Service.webp",
       "italian-law": "italian-law.webp",
       "property-law": "property-law.webp",
-      "workplace-relations-safety": "workplace-relations-safety.webp"
+      "workplace-relations-safety": "workplace-relations-safety.webp",
+      "banking-financial-services":"banking-finance.webp"
     };
   
     return `/assets/${imageMap[category] || 'default-image.webp'}`;
