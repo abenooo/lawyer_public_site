@@ -145,9 +145,9 @@ const AttornyCategory = () => {
           image: "/assets/about/Commercial Litigation.webp",
           url: "/practice-area/commercial-litigation"
         },
-        {
+                {
           name: "Employment Law",
-          image: "/assets/about/Employment Law.webp",
+          image: "/assets/about/Insurance Law.webp",
           url: "/practice-area/employment-law"
         },
         {
