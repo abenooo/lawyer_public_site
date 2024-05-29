@@ -1,8 +1,7 @@
-import Teams from "./Teams";
+
 import NewsCard from "./NewsCard"
-import PracticeCard from "./PracticeCard"
-import Categories from "./Categories";
 import AttornyCategory from "./AttornyCategory";
+import Link from "next/link";
 function Hero() {
   return (
     <>
@@ -18,18 +17,19 @@ function Hero() {
       clients, not on how our foyer looks.
     </p>
     <div className="md:flex pb-28 pt-10 space-x-3">
-      <a
+      <Link
         className="border border-cyan-600 px-8 py-3 font-medium hover:bg-white hover:text-black"
         href="/contactUs"
       >
         Contact us
-      </a>
-      <a
+      </Link>
+      <Link
         className="border border-cyan-600 px-8 py-3 font-medium hover:bg-white hover:text-black"
-        href="/practice-area/insurance-law"
+        href="/practiceArea"
       >
         Practice area
-      </a>
+      </Link>
+      
     </div>
   </div>
 </div>
