@@ -6,6 +6,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import { GrInstagram } from "react-icons/gr";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
+import Image from "next/image";
+import Link from "next/link";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -14,10 +16,12 @@ function Footer() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:w-3/4 mx-auto">
         <div className="col-span-2 md:col-span-1">
           <div className="flex gap-3">
-            <img
-              src="/assets/logo.jpg"
+            <Image
+              src="/assets/logo.jpg" // Corrected path to logo.jpg
               alt="logo"
-              className="h-8 w-8 rounded-xl"
+              className="rounded-xl"
+              height={32}
+              width={32}
             />
             <h3 className="text-lg font-semibold text-gray-200">
               Solomon Mulugeta & Associates
@@ -34,32 +38,32 @@ function Footer() {
           <h3 className="text-lg font-semibold text-gray-200">Quick Links</h3>
           <ul className="ml-3">
             <li>
-              <a href="/" className="hover:underline hover:text-gray-200">
+              <Link href="/" className="hover:underline hover:text-gray-200">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:underline hover:text-gray-200">
+              <Link href="/about" className="hover:underline hover:text-gray-200">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contactUs"
                 className="hover:underline hover:text-gray-200"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/news" className="hover:underline hover:text-gray-200">
+              <Link href="/news" className="hover:underline hover:text-gray-200">
                 News
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/blog" className="hover:underline hover:text-gray-200">
+              <Link href="/blog" className="hover:underline hover:text-gray-200">
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -67,29 +71,29 @@ function Footer() {
           <h3 className="text-lg font-semibold text-gray-200">Practice Area</h3>
           <ul className="ml-3">
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
-                Family Law
-              </a>
+              <Link href="/practice-area/dispute-resolution" className="hover:underline hover:text-gray-200">
+              Alternative Dispute Resolution
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
+              <Link href="/practice-area/commercial-law" className="hover:underline hover:text-gray-200">
                 Commercial Law
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
+              <Link href="#" className="hover:underline hover:text-gray-200">
                 Insurance Law
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
+              <Link href="/practice-area/commercial-litigation" className="hover:underline hover:text-gray-200">
                 Commercial Litigation
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline hover:text-gray-200">
-                Service
-              </a>
+              <Link href="/practice-area/banking-financial-services" className="hover:underline hover:text-gray-200">
+              Banking Financial Services
+              </Link>
             </li>
           </ul>
         </div>
@@ -122,45 +126,56 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center gap-2 my-8">
-        <a
+        <Link
           href="#"
           className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           {" "}
           <FaFacebookF />
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           {" "}
           <FaXTwitter />
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           {" "}
           <GrInstagram />
-        </a>
-       
-        <a
+        </Link>
+
+        <Link
           href="https://t.me/+251944246334"
           className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           <FaTelegramPlane />
-        </a>
+        </Link>
 
-        <a
+        <Link
           href="https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/"
           className="bg-gray-700 hover:bg-cyan-600 p-3 rounded-full text-white"
         >
           <FaLinkedinIn />
-        </a>
+        </Link>
       </div>
       <p className="text-center">
         {year} Solomon Mulugeta & Associates. All Rights Reserved.
       </p>
+      <p className="text-center">
+  Design and Develop by{' '}
+  <Link
+    href="https://www.linkedin.com/in/abenezer-kifle/"
+    className="text-blue-600 hover:text-blue-800"
+  >
+    Abenezer Kifle
+  </Link>
+  .
+</p>
+
     </div>
   );
 }

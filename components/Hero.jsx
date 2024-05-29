@@ -135,7 +135,7 @@ function Hero() {
      <AttornyCategory />
       </div>
       {/* <Categories /> */}
-      <Teams/>
+      {/* <Teams/> */}
       <NewsCard/>
     </>
   );

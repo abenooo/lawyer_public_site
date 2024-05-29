@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const MyNavbar = () => {
   const [isNav, setNav] = useState(false);
@@ -12,6 +13,13 @@ const MyNavbar = () => {
       <nav className="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
           <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Image
+              src="/assets/logo.jpg" // Corrected path to logo.jpg
+              alt="logo"
+              className="rounded-xl"
+              height={32}
+              width={32}
+            />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Solomon Mulugeta & Associates
             </span>
