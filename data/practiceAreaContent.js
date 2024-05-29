@@ -293,7 +293,7 @@ const practiceAreaContent = {
     details: [
       "The past couple of decades have seen the emergence and massive expansion of private banks, micro-finance institutions and insurance service providers. In particular, the extensive role played by state-owned banks and financial institutions in co-financing and regulating foreign investments, has significantly increased. New developments in quasi-financial service provisions, is attracting the eyes of many foreign investors.",
       "Our team of lawyers are at the forefront of the ever-changing financial regulation framework. We provide advice on major foreign financing, foreign supplier credit, foreign shareholder loan registration and other similar transactions requiring pre-approval by the National Bank of Ethiopia. Furthermore, our office has been involved in major insurance policy related advisory works for major investments in Ethiopia.",
-      "At Aman & Partners LLP, our team supports foreign investors in providing tailored services on reform related developments in the sector.",
+      "At SML Lawyers, our team supports foreign investors in providing tailored services on reform related developments in the sector.",
     ],
     itemDetails: [
       "Financial structuring",

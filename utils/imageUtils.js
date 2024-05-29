@@ -1,25 +1,22 @@
 const getImageUrl = (category) => {
-    const imageMap = {
-      "alternative-dispute-resolution": "alternative-dispute-resolution.webp",
-      "banking-finance": "banking-finance.webp",
-      "bankruptcy-insolvency": "bankruptcy-insolvency.webp",
+  const imageMap = {
+      "dispute-resolution": "alternative-dispute-resolution.webp",
+      "construction-infrastructure": "banking-finance.webp",
+      "employment-law": "bankruptcy-insolvency.webp",
       "building-and-construction": "building-and-construction.webp",
       "commercial-law": "commercial-law.webp",
       "commercial-litigation": "commercial-litigation.webp",
-      "dispute-resolution": "dispute-resolution.webp",
-      "estate-planning-disputes": "estate-planning-disputes.webp",
-      "family-law": "Family Law Service.webp", 
-      "franchising-licencing": "franchising-licencing.webp",
-      "immigration": "immigration.webp",
-      "insurance-law": "Insurance-Law-Service.webp",
-      "italian-law": "italian-law.webp",
-      "property-law": "property-law.webp",
-      "workplace-relations-safety": "workplace-relations-safety.webp",
-      "banking-financial-services":"banking-finance.webp"
-    };
-  
-    return `/assets/${imageMap[category] || 'default-image.webp'}`;
+      "tax-customs": "dispute-resolution.webp",
+      "trade-practice-anti-trust": "estate-planning-disputes.webp",
+      "estate-planning-disputes": "Family Law Service.webp",
+      "intellectual-property-technology": "franchising-licencing.webp",
+      "real-estate-property": "Insurance-Law-Service.webp",
+      "project-finance-ppp-public-procurement": "property-law.webp",
+      "mining-energy": "workplace-relations-safety.webp",
+      "banking-financial-services": "banking-finance.webp"
   };
-  
-  export default getImageUrl;
-  
+
+  return `/assets/${imageMap[category] || 'default-image.webp'}`;
+};
+
+export default getImageUrl;
