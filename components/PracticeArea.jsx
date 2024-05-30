@@ -17,7 +17,7 @@ const PracticeArea = () => {
             <div className="mb-6">
               <p className="font-sans text-xs text-gray-900 dark:text-gray-800 text-center">
                 Built on a strong foundation of commercial litigation and
-                dispute resolution, SLF Lawyers has grown into a reputable
+                dispute resolution, SML Lawyers has grown into a reputable
                 practice known for its commercially minded approach to matters.
                 With offices situated in Addis Ababa, Bahirdar, Hawassa, Mekelle
                 and Adama, we are able to service our clients with our team
