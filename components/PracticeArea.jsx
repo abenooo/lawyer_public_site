@@ -19,8 +19,8 @@ const PracticeArea = () => {
                 Built on a strong foundation of commercial litigation and
                 dispute resolution, SLF Lawyers has grown into a reputable
                 practice known for its commercially minded approach to matters.
-                With offices situated in Melbourne, Sydney, Brisbane, Gold Coast
-                and Perth CBDs, we are able to service our clients with our team
+                With offices situated in Addis Ababa, Bahirdar, Hawassa, Mekelle
+                and Adama, we are able to service our clients with our team
                 of experienced legal professionals who are well versed in
                 various professional legal services. We provide our clients with
                 clear and concise advice, always being mindful of the most
