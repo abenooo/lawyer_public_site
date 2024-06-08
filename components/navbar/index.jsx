@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
+import Disclaimer from "../Disclaimer";
 const MyNavbar = () => {
   const [isNav, setNav] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
@@ -261,6 +261,15 @@ const MyNavbar = () => {
                     <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
                       <div className="font-semibold">Banking & Financial Services</div>
                       <span className="text-sm text-gray-500 dark:text-gray-400">Banking & Financial Services law services and support.</span>
+                    </a>
+                  </Link>
+                </li>
+                <li></li>
+                <li>
+                  <Link href="/disclaimer" legacyBehavior>
+                    <a className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                      <div className="font-semibold">Disclaimer</div>
+                      {/* <span className="text-sm text-gray-500 dark:text-gray-400">Disclaimer</span> */}
                     </a>
                   </Link>
                 </li>
