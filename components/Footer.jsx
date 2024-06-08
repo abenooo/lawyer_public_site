@@ -16,13 +16,13 @@ function Footer() {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:w-3/4 mx-auto">
         <div className="col-span-2 md:col-span-1">
           <div className="flex gap-3">
-            <Image
-              src="/assets/logo.jpg" // Corrected path to logo.jpg
-              alt="logo"
-              className="rounded-xl"
-              height={32}
-              width={32}
-            />
+          <Image
+                src="/assets/logo.jpg"
+                alt="logo"
+                className="rounded-xl"
+                height={32}
+                width={32}
+              />
             <h3 className="text-lg font-semibold text-gray-200">
               Solomon Mulugeta & Associates
             </h3>
