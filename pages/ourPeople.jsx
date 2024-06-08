@@ -7,26 +7,31 @@ const possibleMembers = [
     name: "Solomon Mulugeta",
     role: "Managing Partner",
     imgSrc: "/assets/team.jpeg", // Adjusted path
+    linkedinUrl: "https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/",
   },
   {
     name: "Tigist Mulugeta",
     role: "Senior Partner",
-    imgSrc: "/assets/four.webp", // Adjusted path assuming same directory
+    imgSrc: "/assets/four.webp", 
+     linkedinUrl: "https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/"
   },
   {
     name: "Yohannis Mulugeta",
     role: "Partner",
-    imgSrc: "/assets/four.webp", // Adjusted path assuming same directory
+    imgSrc: "/assets/four.webp", 
+     linkedinUrl: "https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/"
   },
   {
     name: "Anteneh Deress",
     role: "Senior Partner",
-    imgSrc: "/assets/team.jeg", // Adjusted path
+    imgSrc: "/assets/team.jeg", 
+     linkedinUrl: "https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/"
   },
   {
     name: "Habtamu Siraje",
     role: "Senior Partner",
-    imgSrc: "/assets/team.jeg", // Adjusted path
+    imgSrc: "/assets/team.jeg", 
+     linkedinUrl: "https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/"
   },
 ];
 
@@ -50,10 +55,17 @@ const TeamMember = ({ member }) => (
     <p className="my-2 font-semibold">{member.name}</p>
     <p className="my-2">{member.role}</p>
     <div className="flex justify-center gap-5 my-3">
-      <BsLinkedin className="text-cyan-500 text-xl" />
+      <a href="https://www.linkedin.com/in/solomon-mulugeta-abate-1647176a/" target="_blank" rel="noopener noreferrer">
+        <BsLinkedin className="text-cyan-500 text-xl hover:text-cyan-700" />
+      </a>
       <BsTelephoneFill className="text-cyan-500 text-xl" />
       <BsEnvelope className="text-cyan-500 text-xl" />
     </div>
+    {/* <div className="flex justify-center gap-5 my-3">
+      <BsLinkedin className="text-cyan-500 text-xl" />
+      <BsTelephoneFill className="text-cyan-500 text-xl" />
+      <BsEnvelope className="text-cyan-500 text-xl" />
+    </div> */}
   </div>
 );
 
