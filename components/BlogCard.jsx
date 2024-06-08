@@ -12,11 +12,11 @@ function BlogCard() {
 
   return (
     <div className="mx-4">
-      <h1 className="text-4xl font-semibold text-center my-6">Latest Blog</h1>
+      <h1 className="text-4xl font-semibold text-center my-6">Coming Soon ...</h1>
       <p className="text-center mb-5">
-        Keep up to date with the latest in law and technology.
+        We are working on it soon it will be available.
       </p>
-      <div className="md:grid grid-cols-3 md:w-3/4 mx-auto gap-5">
+      {/* <div className="md:grid grid-cols-3 md:w-3/4 mx-auto gap-5">
         {news.map((item) => (
           <div
             key={item._id}
@@ -40,7 +40,7 @@ function BlogCard() {
             </Link>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

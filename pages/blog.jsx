@@ -18,7 +18,7 @@ function blog() {
             <div className="w-full md:w-3/4 px-4">
               <BlogCard />
             </div>
-            <div className="w-full md:w-1/4 px-4">
+            {/* <div className="w-full md:w-1/4 px-4">
               <div className="bg-gray-20 p-4">
                 <h2 className="text-xl font-bold text-gray-800 mb-4 my-6">
                   Recent Blogs
@@ -66,7 +66,7 @@ function blog() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
