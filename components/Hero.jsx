@@ -5,12 +5,13 @@ import Link from "next/link";
 function Hero() {
   return (
     <>
-     <div className="bg-[url('/assets/meeting.jpg')] h-[85vh] bg-cover">
+     <div className="bg-[url('/assets/meeting.jpg')] h-[85vh] bg-cover ">
+
   <div className="text-white flex flex-col gap-5 justify-center items-center h-full">
-    <h1 className="text-gray-700 font-semibold text-4xl md:text-5xl lg:6xl xl:7xl">
+    <h1 className="text-white font-semibold text-4xl md:text-5xl lg:6xl xl:7xl">
       SML Lawyers
     </h1>
-    <p className="mx-3 text-center text-medium md:w-2/5 text-gray-700">
+    <p className="mx-3 text-center text-medium md:w-2/5 text-white text-xl">
     SML Lawyers is a new breed of law firm. We don’t stand on tradition
       or outdated ways of doing business. We don’t hide behind legalese or
       arcane legal procedures. The focus is on getting results for our
