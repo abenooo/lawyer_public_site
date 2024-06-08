@@ -57,8 +57,8 @@ function ContactUs() {
           your queries, offer sound legal counsel, or arrange a detailed
           consultation at your convenience. We’re committed to collaborating
           with you to secure the most favorable outcome for your legal concerns.
-          Visit us today at our central location in Addis Ababa, Lideta,
-          directly opposite Landmark, and discover how we can support your
+          Visit us today at our central location in Addis Ababa, Lideta Sub City,
+          ,directly opposite to landmark Lideta Federal court, and discover how we can support your
           journey towards justice.
         </p>
         psolomon39@yahoo.com ||psolaxis@gmail.com
