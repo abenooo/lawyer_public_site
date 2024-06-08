@@ -4,30 +4,32 @@ import { BsLinkedin, BsTelephoneFill, BsEnvelope } from "react-icons/bs";
 
 const possibleMembers = [
   {
-    name: "Rebecca Fahey",
+    name: "Solomon Mulugeta",
     role: "Managing Partner",
-    imgSrc: "/our team/one.avif",
+    imgSrc: "/assets/team.jpeg", // Adjusted path
   },
-  { name: "Mark Smith", role: "Senior Partner", imgSrc: "/our team/two.avif" },
   {
-    name: "John Gdanski",
+    name: "Tigist Mulugeta",
     role: "Senior Partner",
-    imgSrc: "/our team/three.avif",
+    imgSrc: "/assets/four.webp", // Adjusted path assuming same directory
   },
   {
-    name: "Melissa Patterson",
-    role: "Senior Partner",
-    imgSrc: "/our team/four.webp",
-  },
-  { name: "Jason Quah", role: "Partner", imgSrc: "/our team/five.webp" },
-  { name: "Angela Smith", role: "Partner", imgSrc: "/our team/six.jpeg" },
-  { name: "Charles Ampt", role: "Partner", imgSrc: "/our team/seven.avif" },
-  {
-    name: "Berndan Hoogenbosch",
+    name: "Yohannis Mulugeta",
     role: "Partner",
-    imgSrc: "/our team/eight.avif",
+    imgSrc: "/assets/four.webp", // Adjusted path assuming same directory
+  },
+  {
+    name: "Anteneh Deress",
+    role: "Senior Partner",
+    imgSrc: "/assets/team.jeg", // Adjusted path
+  },
+  {
+    name: "Habtamu Siraje",
+    role: "Senior Partner",
+    imgSrc: "/assets/team.jeg", // Adjusted path
   },
 ];
+
 
 const getRandomMembers = (count, members) => {
   const shuffled = [...members].sort(() => 0.5 - Math.random());
@@ -75,84 +77,81 @@ const OurPeople = () => {
 
   return (
     <>
-    <h3 className="text-center text-2xl">Coming Soon ...</h3>
+      <div className="bg-[url('/assets/ourPeople.png')] h-[85vh] bg-cover ">
+        <div className="text-white flex justify-center items-center h-full">
+          <h1 className="font-sans lg:mt-40 md:mt-20 text-white font-semibold md:5xl lg:text-6xl text-3xl text-center">
+            Our People
+          </h1>
+        </div>
+      </div>
+      <div className="text-center">
+        <div className="-mt-20 shadow-2xl w-11/12 mx-auto rounded-3xl md:w-3/5">
+          <div className="bg-white rounded-t-3xl py-3 md:flex-row justify-around md:p-10">
+            <div className="mb-6">
+              <p className="font-sans text-xs text-gray-900 dark:text-gray-800 text-center">
+                Our team has a combined experience of over 750 years and decades
+                of hands-on experience in each of our practice areas.
+              </p>
+              <p className="font-sans text-xs text-gray-900 dark:text-gray-800">
+                Contact our team directly by selecting one of the following
+                locations and clicking on their details
+              </p>
+            </div>
+            <div className="bg-white rounded-t-3xl py-3 md:flex-row justify-around md:p-10 flex space-x-2">
+              <button
+                onClick={() => setFilter("All")}
+                className={
+                  buttonClass("All") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                All
+              </button>
+              <button
+                onClick={() => setFilter("Managing Partner")}
+                className={
+                  buttonClass("Managing Partner") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                Managing Partners
+              </button>
+              <button
+                onClick={() => setFilter("Senior Partner")}
+                className={
+                  buttonClass("Senior Partner") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                Senior Partners
+              </button>
+              <button
+                onClick={() => setFilter("Partner")}
+                className={
+                  buttonClass("Partner") +
+                  " flex-1 text-center rounded hover:bg-gray-300"
+                }
+              >
+                Partners
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-4 grid-cols-2 md:w-3/4 mx-auto gap-5 mt-20">
+        {filteredMembers.map((member) => (
+          <TeamMember key={member.name} member={member} />
+        ))}
+      </div>
+      <div className="text-center">
+        <a
+          href="#"
+          className="inline-block mx-auto text-center mt-8 border border-cyan-600 px-8 py-3 font-medium hover:bg-black hover:text-white"
+        >
+          View More People
+        </a>
+      </div>
     </>
-    // <>
-    //   <div className="bg-[url('https://kerkmandunn.com/wp-content/uploads/2022/02/people-sitting-at-a-conference-room-table_s.jpg')] h-[50vh] bg-cover brightness-10">
-    //     <div className="text-white flex justify-center items-center h-full">
-    //       <h1 className="font-sans lg:mt-40 md:mt-20 text-white font-semibold md:5xl lg:text-6xl text-3xl text-center">
-    //         Our People
-    //       </h1>
-    //     </div>
-    //   </div>
-    //   <div className="text-center">
-    //     <div className="-mt-20 shadow-2xl w-11/12 mx-auto rounded-3xl md:w-3/5">
-    //       <div className="bg-white rounded-t-3xl py-3 md:flex-row justify-around md:p-10">
-    //         <div className="mb-6">
-    //           <p className="font-sans text-xs text-gray-900 dark:text-gray-800 text-center">
-    //             Our team has a combined experience of over 750 years and decades
-    //             of hands-on experience in each of our practice areas.
-    //           </p>
-    //           <p className="font-sans text-xs text-gray-900 dark:text-gray-800">
-    //             Contact our team directly by selecting one of the following
-    //             locations and clicking on their details
-    //           </p>
-    //         </div>
-    //         <div className="bg-white rounded-t-3xl py-3 md:flex-row justify-around md:p-10 flex space-x-2">
-    //           <button
-    //             onClick={() => setFilter("All")}
-    //             className={
-    //               buttonClass("All") +
-    //               " flex-1 text-center rounded hover:bg-gray-300"
-    //             }
-    //           >
-    //             All
-    //           </button>
-    //           <button
-    //             onClick={() => setFilter("Managing Partner")}
-    //             className={
-    //               buttonClass("Managing Partner") +
-    //               " flex-1 text-center rounded hover:bg-gray-300"
-    //             }
-    //           >
-    //             Managing Partners
-    //           </button>
-    //           <button
-    //             onClick={() => setFilter("Senior Partner")}
-    //             className={
-    //               buttonClass("Senior Partner") +
-    //               " flex-1 text-center rounded hover:bg-gray-300"
-    //             }
-    //           >
-    //             Senior Partners
-    //           </button>
-    //           <button
-    //             onClick={() => setFilter("Partner")}
-    //             className={
-    //               buttonClass("Partner") +
-    //               " flex-1 text-center rounded hover:bg-gray-300"
-    //             }
-    //           >
-    //             Partners
-    //           </button>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <div className="grid md:grid-cols-4 grid-cols-2 md:w-3/4 mx-auto gap-5 mt-20">
-    //     {filteredMembers.map((member) => (
-    //       <TeamMember key={member.name} member={member} />
-    //     ))}
-    //   </div>
-    //   <div className="text-center">
-    //     <a
-    //       href="#"
-    //       className="inline-block mx-auto text-center mt-8 border border-cyan-600 px-8 py-3 font-medium hover:bg-black hover:text-white"
-    //     >
-    //       View More People
-    //     </a>
-    //   </div>
-    // </>
   );
 };
 
