@@ -9,7 +9,7 @@ const Accordion = () => {
   };
 
   const questions = [
-    { header: "What services do SMA Lawyers offer?", text: "SMA Lawyers provides a comprehensive range of legal services, including Building & Construction, Commercial Litigation, Commercial Law, Workplace Relations & Safety, Estate Planning & Disputes, Family Law, Franchising & Licensing, Insolvency, Insurance Law, Property Law, Immigration, Banking & Finance, and Italian Law." },
+    { header: "What services do SMA Lawyers offer?", text: "SMA Lawyers provides a comprehensive range of legal services, including Building & Construction, Commercial Litigation, Commercial Law, Workplace Relations & Safety, Estate Planning & Disputes, Family Law, Franchising & Licensing, Insolvency, Insurance Law, Property Law, Immigration, Banking & Finance, and Ethiopian Law." },
     { header: "Where are SMA Lawyers' offices located?", text: "SMA Lawyers has offices in major Ethiopia cities including Addis Ababa, Bahir Dar, Hawassa, Mekelle and the Adama." },
     { header: "How can SMA Lawyers assist with commercial litigation?", text: "Our team combines years of legal expertise with a commercially minded approach to help clients navigate complex litigation matters, aiming for favourable outcomes in all situations." },
     { header: "What makes SMA Lawyers different from other law firms?", text: "SMA Lawyers is distinguished by its multidisciplinary team, attention to detail, thorough preparation, intelligent strategy, and efficient service delivery, ensuring comprehensive support for both individuals and businesses." },
