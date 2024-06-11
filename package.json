@@ -6,11 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
+    "start-backend": "cd Backend && node server.js",
+    "both": "concurrently \"npm:dev\" \"npm:start-backend\"",
     "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@hookform/resolvers": "^3.3.2",
+    "concurrently": "^8.2.2",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.8.0",
     "formik": "^2.4.5",
