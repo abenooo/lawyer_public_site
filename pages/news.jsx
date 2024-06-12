@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import NewsCard from "@/components/NewsCard";
 function news() {
   const [categories, setCategories] = useState([]);
+  const url = `http://solomonmoalawoffice.com:3003/api/newsCategory`;
   useEffect(() => {
-    const url = `http://solomonmoalawoffice.com:3003/api/newsCategory`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setCategories(data))

@@ -3,8 +3,8 @@ import Link from "next/link";
 function NewsCard() {
   const [news, setNews] = useState([]);
   const imgUrl = `${process.env.NEXT_PUBLIC_IMG_URL}`;
+  const url = `http://solomonmoalawoffice.com:3003/api/news`;
   useEffect(() => {
-    const url = `http://solomonmoalawoffice.com:3003/api/news`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setNews(data))
