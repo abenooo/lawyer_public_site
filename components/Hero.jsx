@@ -98,9 +98,8 @@ function Hero() {
               To learn more about our Ethiopia law office's many areas of
               practice, visit our Practice Areas page. For confidential advice
               on your legal issue, please{" "}
-              <a href="/contactUs" className="bg-gray-300" >
-                Contact Us
-              </a>
+              <p class="text-left text-base mb-4"> 
+               <a href="/contactUs" class="text-blue-500">Contact Us</a>. </p>
               .{" "}
             </p>
           </div>
