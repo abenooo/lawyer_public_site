@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 function NewsCard() {
   const [news, setNews] = useState([]);
-  const imgUrl = `${process.env.NEXT_PUBLIC_IMG_URL}`
+  const imgUrl = `${process.env.NEXT_PUBLIC_IMG_URL}`;
   useEffect(() => {
-    const url =  `${process.env.NEXT_PUBLIC_BASE_URL}/api/news`;
+    const url = `${process.env.NEXT_PUBLIC_BASE_URL} : ${process.env.NEXT_PUBLIC_PORT}/api/news`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setNews(data))
@@ -24,7 +24,7 @@ function NewsCard() {
             className="mt-6 shadow-xl text-center max-w-sm bg-white"
           >
             <img
-             src={imgUrl + `${item.NewsImage}`}
+              src={imgUrl + `${item.NewsImage}`}
               alt="news image"
               className="w-full h-auto"
             />
