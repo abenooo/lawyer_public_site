@@ -27,15 +27,27 @@ jobs:
       with:
         node-version: '18'
 
-    - name: 🔨 Install dependencies
+    - name: 🔨 Install dependencies (Root)
+      run: |
+        npm install --legacy-peer-deps
+
+    - name: 🔨 Build frontend
+      run: |
+        npm run build
+
+    - name: 🔨 Install dependencies (Backend)
       working-directory: ./Backend
       run: |
         npm install --legacy-peer-deps
 
-    - name: 🔨 Build backend
+    - name: 🔨 Start backend
       working-directory: ./Backend
       run: |
-        npm start
+        node server.js &
+
+    - name: 🔨 Start frontend
+      run: |
+        NODE_ENV=production node server.js &
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
