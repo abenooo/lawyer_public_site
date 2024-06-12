@@ -28,18 +28,13 @@ jobs:
         node-version: '18'
 
     - name: 🔨 Install dependencies
+      working-directory: ./Backend
       run: |
         npm install --legacy-peer-deps
-
-    - name: 🔨 Build frontend
-      run: |
-        npm run build
 
     - name: 🔨 Build backend
       working-directory: ./Backend
       run: |
-        ls -l
-        npm install
         node server.js
 
     - name: 📂 Sync files
