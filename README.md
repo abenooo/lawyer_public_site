@@ -1,3 +1,5 @@
+![Uploading image.png…]()
+
 Great, using the MERN stack for your law firm project implies certain specific setups, particularly for backend and frontend integration. Let’s update the README to reflect the technologies and steps relevant to a MERN stack application:
 
 ```markdown
