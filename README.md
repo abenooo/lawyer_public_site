@@ -1,3 +1,4 @@
+https://github.com/abenooo/lawyer_public_site/assets/52881874/58288400-8b54-4af6-8be3-3471e5db90b7
  ![localhost_3000_ (1)](https://github.com/abenooo/lawyer_public_site/assets/52881874/99a9de7b-f3fe-420a-b88b-209d7109d9ee)
 
 Great, using the MERN stack for your law firm project implies certain specific setups, particularly for backend and frontend integration. Let’s update the README to reflect the technologies and steps relevant to a MERN stack application:
