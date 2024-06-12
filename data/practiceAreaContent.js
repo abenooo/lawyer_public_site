@@ -62,7 +62,7 @@ const practiceAreaContent = {
     description:
       "SMA Lawyers are knowledgeable in the commercial arena. We provide comprehensive advice on various aspects of commercial law from contractual agreements to business acquisitions.",
     details: [
-      "SMA are knowledgeable in the area of Ethiopian commercial law. As a law firm that offers commercial law services in Australia, our legal experts can help you handle merchant and business related cases with ease.",
+      "SMA are knowledgeable in the area of Ethiopian commercial law. As a law firm that offers commercial law services in Ethiopia, our legal experts can help you handle merchant and business related cases with ease.",
     ],
     itemDetails: [
       "Drafting and advice on various simple and complex commercial agreements",
