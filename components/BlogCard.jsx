@@ -4,7 +4,7 @@ function BlogCard() {
   const [news, setNews] = useState([]);
   const imgUrl = `${process.env.NEXT_PUBLIC_IMG_URL}`;
   useEffect(() => {
-    const url = `${process.env.NEXT_PUBLIC_BASE_URL}: ${process.env.NEXT_PUBLIC_PORT}/api/blog`;
+    const url = `${process.env.NEXT_PUBLIC_BASE_URL}:${process.env.NEXT_PUBLIC_PORT}/api/blog`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setNews(data))

@@ -3,7 +3,7 @@ import NewsCard from "@/components/NewsCard";
 function news() {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
-    const url = `${process.env.NEXT_PUBLIC_BASE_URL}: ${process.env.NEXT_PUBLIC_PORT}/api/newsCategory`;
+    const url = `${process.env.NEXT_PUBLIC_BASE_URL}:${process.env.NEXT_PUBLIC_PORT}/api/newsCategory`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setCategories(data))

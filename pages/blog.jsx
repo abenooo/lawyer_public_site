@@ -4,7 +4,7 @@ function blog() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    const url = `${process.env.NEXT_PUBLIC_BASE_URL}: ${process.env.NEXT_PUBLIC_PORT}/api/blogCategory`;
+    const url = `${process.env.NEXT_PUBLIC_BASE_URL}:${process.env.NEXT_PUBLIC_PORT}/api/blogCategory`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setCategories(data))
