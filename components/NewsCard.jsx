@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
 function NewsCard() {
   const [news, setNews] = useState([]);
   const imgUrl = `${process.env.NEXT_PUBLIC_IMG_URL}`;
-  const url = `https://solomonmoalawoffice.com:3003/api/news/`;
+  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/news/`;
   useEffect(() => {
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => setNews(data))
-      .catch((error) => console.error("Error fetching news:", error));
+      .then(response => response.json())
+      .then(data => setNews(data))
+      .catch(error => console.error('Error fetching news:', error));
   }, []);
 
   return (
@@ -18,7 +18,7 @@ function NewsCard() {
       We are working on it soon it will be available.
       </p> */}
       <div className="md:grid grid-cols-3 md:w-3/4 mx-auto gap-5">
-        {news.map((item) => (
+        {news.map(item => (
           <div
             key={item._id}
             className="mt-6 shadow-xl text-center max-w-sm bg-white"
@@ -29,7 +29,7 @@ function NewsCard() {
               className="w-full h-auto"
             />
             <p className="py-2">
-              {new Date(item.createdAt).toLocaleDateString("en-US")}
+              {new Date(item.createdAt).toLocaleDateString('en-US')}
             </p>
             <p className="pb-5">{item.NewsTitle}</p>
             <Link
