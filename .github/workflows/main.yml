@@ -35,7 +35,7 @@ jobs:
     - name: 🔨 Build backend
       working-directory: ./Backend
       run: |
-        node server.js
+        npm start
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.2
