@@ -89,7 +89,7 @@ const practiceAreaContent = {
       "Building disputes",
       "Retail and Residential Tenancy disputes",
       "Directors and Shareholders disputes",
-      "Australian Consumer Law disputes",
+      "Ethiopian Consumer Law disputes",
       "Professional Negligence claims",
       "Strata Management and/or Owners Corporation disputes",
       "Property disputes",
