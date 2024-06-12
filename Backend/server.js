@@ -10,8 +10,12 @@ connectDB();
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors());
-
+const corsOptions = {
+  origin: process.env.ORIGINONE,
+  credentials: true,
+  optionsSuccessStatus: 200,
+};
+app.use(cors(corsOptions));
 app.use("/uploads", (req, res, next) => {
   const dirPath = path.join(__dirname, "/uploads");
 
