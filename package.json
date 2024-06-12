@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "prod": "NODE_ENV=production node server.js",
     "start-backend": "cd Backend && node server.js",
     "both": "concurrently \"npm:dev\" \"npm:start-backend\"",
+    "start": "concurrently \"npm:prod\" \"npm:start-backend\"",
     "lint": "next lint"
   },
   "dependencies": {
