@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import NewsCard from "@/components/NewsCard";
 function news() {
   const [categories, setCategories] = useState([]);
-  const url = `https://solomonmoalawoffice.com:3003/api/newsCategory`;
+  const url = `https://solomonmoalawoffice.com:3003/api/newsCategory/`;
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())

@@ -3,7 +3,7 @@ import BlogCard from "@/components/BlogCard";
 function blog() {
   const [categories, setCategories] = useState([]);
 
-  const url = `https://solomonmoalawoffice.com:3003/api/blogCategory`;
+  const url = `https://solomonmoalawoffice.com:3003/api/blogCategory/`;
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())

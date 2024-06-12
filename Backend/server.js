@@ -12,8 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 const corsOptions = {
   origin: [
-    "https://solomonmoalawoffice.com",
-    "https://solomonmoalawoffice.com",
+    "https://solomonmoalawoffice.com/",
+    "https://solomonmoalawoffice.com/",
   ],
   credentials: true,
   optionsSuccessStatus: 200,
