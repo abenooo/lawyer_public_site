@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+
 function NewsCard() {
   const [news, setNews] = useState([]);
   const imgUrl = `${process.env.NEXT_PUBLIC_IMG_URL}`;
@@ -8,14 +9,17 @@ function NewsCard() {
   useEffect(() => {
     fetch(url)
       .then((response) => response.json())
-      .then((data) => setNews(data))
+      .then((data) => {
+        console.log("Fetched data:", data);
+        setNews(data);
+      })
       .catch((error) => console.error("Error fetching news:", error));
   }, []);
 
   return (
     <div className="mx-4">
       <div className="md:grid grid-cols-3 md:w-3/4 mx-auto gap-5">
-        {news.map(item => (
+        {news.map((item) => (
           <div
             key={item._id}
             className="mt-6 shadow-xl text-center max-w-sm bg-white"
@@ -28,7 +32,7 @@ function NewsCard() {
               />
             )}
             <p className="py-2">
-              {new Date(item.createdAt).toLocaleDateString('en-US')}
+              {new Date(item.createdAt).toLocaleDateString("en-US")}
             </p>
             <p className="pb-5">{item.NewsTitle}</p>
             <Link
