@@ -4,7 +4,7 @@ import Link from "next/link";
 function NewsCard() {
   const [news, setNews] = useState([]);
   const imgUrl = process.env.NEXT_PUBLIC_IMG_URL;
-  const url = `https://solomonmoalawoffice.com:3003/api/news`;
+  const url = `https://backend.service.solomonmoalawoffice.com/api/news`;
 
   useEffect(() => {
     fetch(url)
