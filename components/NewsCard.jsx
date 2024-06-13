@@ -7,6 +7,7 @@ function NewsCard() {
   const imgUrl = process.env.NEXT_PUBLIC_IMG_URL;
 
   useEffect(() => {
+    console.log('Fetching news from:', url);
     fetch(url)
       .then((response) => {
         if (!response.ok) {

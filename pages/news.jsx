@@ -6,6 +6,7 @@ function News() {
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/newsCategory/`;
 
   useEffect(() => {
+    console.log('Fetching categories from:', url);
     fetch(url)
       .then(response => {
         if (!response.ok) {
