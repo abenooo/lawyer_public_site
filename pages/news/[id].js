@@ -6,11 +6,12 @@ const NewsDetail = () => {
   const router = useRouter();
   const { id } = router.query;
   const [newsItem, setNewsItem] = useState(null);
-  const url = `https://backend.service.solomonmoalawoffice.com/api/news/${id}`;
+  const url = id ? `https://backend.service.solomonmoalawoffice.com/api/news/${id}` : null;
   const imgUrl = 'https://backend.service.solomonmoalawoffice.com/uploads/';
 
   useEffect(() => {
     if (id) {
+      console.log(`Fetching news item with id: ${id} from ${url}`);
       fetch(url)
         .then((response) => {
           if (!response.ok) {
@@ -24,7 +25,7 @@ const NewsDetail = () => {
         })
         .catch((error) => console.error("Error fetching news item:", error));
     }
-  }, [id]);
+  }, [id, url]);
 
   if (!newsItem) return <div>Loading...</div>;
 
