@@ -3,11 +3,10 @@ import Link from "next/link";
 
 function NewsCard() {
   const [news, setNews] = useState([]);
-  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/news`;
-  const imgUrl = process.env.NEXT_PUBLIC_IMG_URL;
+  const url = `https://backend.service.solomonmoalawoffice.com/api/news`;
+  const imgUrl = 'https://backend.service.solomonmoalawoffice.com/uploads/';
 
   useEffect(() => {
-    console.log('Fetching news from:', url);
     fetch(url)
       .then((response) => {
         if (!response.ok) {
