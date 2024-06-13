@@ -40,11 +40,8 @@ function NewsCard() {
               {new Date(item.createdAt).toLocaleDateString("en-US")}
             </p>
             <p className="pb-5">{item.NewsTitle}</p>
-            <Link
-              className="text-blue-500 hover:text-blue-700"
-              href={`/news/${item._id}`}
-            >
-              Read More
+            <Link href={`/news/${item._id}`}>
+              <a className="text-blue-500 hover:text-blue-700">Read More</a>
             </Link>
           </div>
         ))}
