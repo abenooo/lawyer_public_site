@@ -3,18 +3,23 @@ import Link from "next/link";
 
 function NewsCard() {
   const [news, setNews] = useState([]);
-  const imgUrl = `${process.env.NEXT_PUBLIC_IMG_URL}`;
+  const imgUrl = process.env.NEXT_PUBLIC_IMG_URL;
   const url = `https://solomonmoalawoffice.com:3003/api/news`;
 
   useEffect(() => {
     fetch(url)
-      .then((response) => response.json())
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
       .then((data) => {
         console.log("Fetched data:", data);
         setNews(data);
       })
       .catch((error) => console.error("Error fetching news:", error));
-  }, []);
+  }, [url]);
 
   return (
     <div className="mx-4">
