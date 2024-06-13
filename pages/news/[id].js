@@ -11,7 +11,6 @@ const NewsDetail = () => {
 
   useEffect(() => {
     if (id) {
-      console.log(`Fetching news item with id: ${id} from ${url}`);
       fetch(url)
         .then((response) => {
           if (!response.ok) {
@@ -20,12 +19,11 @@ const NewsDetail = () => {
           return response.json();
         })
         .then((data) => {
-          console.log("Fetched data:", data);
           setNewsItem(data);
         })
         .catch((error) => console.error("Error fetching news item:", error));
     }
-  }, [id, url]);
+  }, [id]);
 
   if (!newsItem) return <div>Loading...</div>;
 
@@ -41,7 +39,7 @@ const NewsDetail = () => {
             className="w-full h-auto my-4"
           />
         )}
-        <p className="my-4">{newsItem.NewsDescription}</p>
+        <p className="my-4" style={{ whiteSpace: 'pre-line' }}>{newsItem.NewsDescription}</p>
         <Link href="/news">
           <a className="text-blue-500 hover:text-blue-700">Back to News</a>
         </Link>
