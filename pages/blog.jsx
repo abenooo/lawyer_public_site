@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import BlogCard from "@/components/BlogCard";
+import React, { useEffect, useState } from 'react';
+import BlogCard from '@/components/BlogCard';
 function blog() {
   const [categories, setCategories] = useState([]);
 
-  const url = `https://solomonmoalawoffice.com:3003/api/blogCategory`;
+  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/blogCategory/`;
   useEffect(() => {
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => setCategories(data))
-      .catch((error) => console.error("Error fetching data: ", error));
+      .then(response => response.json())
+      .then(data => setCategories(data))
+      .catch(error => console.error('Error fetching data: ', error));
   }, []);
   return (
     <>
