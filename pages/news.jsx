@@ -3,7 +3,7 @@ import NewsCard from '@/components/NewsCard';
 
 function News() {
   const [categories, setCategories] = useState([]);
-  const url = 'https://backend.service.solomonmoalawoffice.com/api/newsCategory/';
+  const url = `${process.env.NEXT_PUBLIC_BASE_URL}/api/newsCategory/`;
 
   useEffect(() => {
     fetch(url)
