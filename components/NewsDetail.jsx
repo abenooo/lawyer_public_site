@@ -8,7 +8,6 @@ const NewsDetail = () => {
   const [newsItem, setNewsItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const imgUrl = 'https://backend.service.solomonmoalawoffice.com/uploads/';
 
   useEffect(() => {
     if (id) {
@@ -41,7 +40,7 @@ const NewsDetail = () => {
         <p className="text-gray-600">{new Date(newsItem.createdAt).toLocaleDateString("en-US")}</p>
         {newsItem.NewsImage && (
           <img
-            src={`${imgUrl}${newsItem.NewsImage}`}
+            src={newsItem.NewsImage} // Directly use the image URL from the API response
             alt="news image"
             className="w-full h-auto my-4"
           />
