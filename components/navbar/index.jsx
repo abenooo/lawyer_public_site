@@ -33,8 +33,8 @@ const MyNavbar = () => {
                 height={32}
                 width={32}
               />
-              <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-                Solomon Mulugeta & Associates
+              <span className="self-center text-sm xl:text-xl font-semibold whitespace-nowrap dark:text-white">
+                Solomon Mulugeta & Associates 
               </span>
             </a>
           </Link>
