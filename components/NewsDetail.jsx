@@ -19,7 +19,7 @@ const NewsDetail = () => {
             throw new Error(`HTTP error! status: ${response.status}`);
           }
           const data = await response.json();
-          setNewsItem(data);
+          setNewsItem(data[0]); // Assuming the response is an array and we need the first item
         } catch (error) {
           setError(error.message);
         } finally {
@@ -55,6 +55,4 @@ const NewsDetail = () => {
   );
 };
 
-
 export default NewsDetail;
-
