@@ -8,6 +8,7 @@ const NewsDetail = () => {
   const [newsItem, setNewsItem] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const baseUrl = 'https://backend.service.solomonmoalawoffice.com/uploads/';
 
   useEffect(() => {
     if (id) {
@@ -33,6 +34,9 @@ const NewsDetail = () => {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
+  // Construct the image URL
+  const imageUrl = newsItem.NewsImage.startsWith('http') ? newsItem.NewsImage : `${baseUrl}${newsItem.NewsImage}`;
+
   return (
     <div className="mx-4">
       <div className="max-w-3xl mx-auto">
@@ -40,7 +44,7 @@ const NewsDetail = () => {
         <p className="text-gray-600">{new Date(newsItem.createdAt).toLocaleDateString("en-US")}</p>
         {newsItem.NewsImage && (
           <img
-            src={newsItem.NewsImage} // Directly use the image URL from the API response
+            src={imageUrl} // Use the constructed image URL
             alt="news image"
             className="w-full h-auto my-4"
           />
