@@ -55,7 +55,7 @@ This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE
 This software is provided "as is", without warranty of any kind. Solomon law firms is not a substitute for professional legal advice. Always consult with a qualified attorney for specific legal issues.
 
 ## Contact
-If you have any other questions or issues, please contact [Contact Information].
+For any further inquiries or issues, please contact [Contact Information].
 
 ---
 © [Year] Solomon law firms. All Rights Reserved.
